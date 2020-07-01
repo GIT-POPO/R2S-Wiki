@@ -9,24 +9,24 @@
 NanoPi R2S是友善电子团队最新推出的一款实现满速率双千兆的、完全开源的IoT应用神器。
 NanoPi R2S 使用RK3328 Soc，有两个千兆网络，1G DDR4内存，支持Docker CE, 完全开源，用于企业物联网二次开发，个人定制NAS，家庭物联网网关等。
 
-  * 1.1 开发板介绍
+* 1.1 开发板介绍
 
-  > Soc: Rockchip RK3328, Quad-core Cortex-A53
-  > DDR4内存: 1GB
-  > 网口：
-  > RTL8211E (10/100/1000M以太网口 x 1)
-  > RTL8153B (USB3.0转10/100/1000M以太网口 x 1)
-  > USB2.0接口: USB Type-A x1
-  > TF卡槽 x 1
-  > MicroUSB: 供电和Slave功能
-  > Debug Serial Port: 3.3V TTL电平，3Pin 2.54mm间距排针
-  > LED灯: LED x 3
-  > 按键: Reset按键 x 1 (可用户自定义功能)
-  > 开发板尺寸: 55.6 x 52mm
-  > 供电: 直流5V/2A
-  > 使用温度: 0℃ to 80℃
+> Soc: Rockchip RK3328, Quad-core Cortex-A53  
+> DDR4内存: 1GB  
+> 网口：  
+> RTL8211E (10/100/1000M以太网口 x 1)  
+> RTL8153B (USB3.0转10/100/1000M以太网口 x 1)  
+> USB2.0接口: USB Type-A x1  
+> TF卡槽 x 1  
+> MicroUSB: 供电和Slave功能  
+> Debug Serial Port: 3.3V TTL电平，3Pin 2.54mm间距排针  
+> LED灯: LED x 3  
+> 按键: Reset按键 x 1 (可用户自定义功能)  
+> 开发板尺寸: 55.6 x 52mm  
+> 供电: 直流5V/2A  
+> 使用温度: 0℃ to 80℃
 
-  > 详细介绍: https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh
+> 详细介绍: https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh
 
   * 1.2 灯光按键介绍
 

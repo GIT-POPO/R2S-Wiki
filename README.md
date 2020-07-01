@@ -26,8 +26,9 @@ NanoPi R2S 使用RK3328 Soc，有两个千兆网络，1G DDR4内存，支持Dock
 > 供电: 直流5V/2A  
 > 使用温度: 0℃到80℃
 
-> 【详细介绍】（https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh）
+> [详细介绍]（https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh）
 
+---
 * 1.2 __灯光按键介绍__
 
 灯光前面板由wan lan绿色指示灯和sys红色指示灯组成，wan lan指示灯在部分固件下不能亮起，sys指示灯在开机状态时，是红色双闪状态。  
@@ -84,10 +85,13 @@ RK3328在日常使用中，发热量偏大。需要散热来保证不会达到�
 ---
 * 2.4 __USB网卡__
 
+---
 * 2.5 __OLED屏幕__
 
+---
 * 2.6 __其他外设__
 
+---
 ### 3、主要功能
 
 —3.1 路由器

@@ -26,7 +26,7 @@ NanoPi R2S 使用RK3328 Soc，有两个千兆网络，1G DDR4内存，支持Dock
 > 供电: 直流5V/2A  
 > 使用温度: 0℃到80℃
 
-> [详细介绍]（https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh）
+> [详细介绍](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)
 
 ---
 * 1.2 __灯光按键介绍__

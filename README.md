@@ -367,7 +367,7 @@ Q:固件开启bbr加速了吗？
 A:原生固件默认打开bbr加速，友善固件在网络-turbo acc加速打开。5.4内核的bbr没万兆bug。
 
 Q:flow加速/软件流量分载/sfe加速要开吗？  
-A:flow offloading/sfe等建议带宽超过300MB的用户打开。不要同时开，开一个就好。
+A:flow offloading/sfe等建议带宽超过500Mbps的用户打开。不要同时开，开一个就好。
 
 Q:HWNAT/硬件流量分载要开吗？  
 A:又不是MTK76xx，不能开！（开东西前一定知道你在干什么！）

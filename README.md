@@ -85,7 +85,7 @@ jffs2reset && reboot now
 * __2.3 散热选择__
 
 RK3328在日常使用中，发热量偏大。需要散热来保证不会达到温度墙而掉频。  
-在OpenWrt中，温度墙是85℃
+RK3328的温度墙是85℃
 
 * 2.3.1 铝合金外壳
 
@@ -198,14 +198,51 @@ FriendlyWrt可编译进811ac等USB网卡，设置为N模式，5GHz。强制频�
 
 * __4.1 原生OpenWrt固件__
 
+* 4.1.1 原生支持OpenWrt固件
 
-4.1.1 原生支持OpenWrt固件（开发中）
-——4.1.2 Snapshot版原生固件
-———4.1.2.1 QiuSimons原生固件
-———4.1.2.2 Quintus Chu原生固件
-———4.1.2.3 XXXXX原生固件（自己补充）
-—4.2 Friendlywrt固件
-——4.2.1 友善官方固件
+[开发中](https://github.com/openwrt/openwrt/pull/2945)
+
+* 4.1.2 Snapshot版原生固件
+
+源于开源社区的努力。
+
+* 4.1.2.1 QiuSimons原生固件
+
+__自用固件__ ,分docker版和无docker版。  
+目前支持OLED和部分USB网卡，具体内容详见readme。  
+已托管给ctcgfw  
+地址：https://github.com/project-openwrt/R2S-OpenWrt
+
+* 4.1.2.2 Quintus Chu原生固件
+
+__自用固件__ ,分OpenWrt版和FriendlyWrt版，FriendlyWrt版详见4.2.2.3条目。  
+固件分为slim版和full版，目前支持OLED和部分USB网卡，具体内容详见readme和releases。  
+地址：https://github.com/quintus-lab/Openwrt-R2S
+
+* 4.1.2.3 Kane Green的原生固件
+
+__自用固件__ ,高大全固件，发布于Actions。  
+具体内容详见readme。  
+地址：https://github.com/KaneGreen/R2S-OpenWrt
+
+* 4.1.2.4 Nick Bot的原生固件
+
+__自用固件__ ,极简固件，发布于releases。  
+目前不支持OLED和无线USB网卡，具体内容详见readme和releases。  
+地址：https://github.com/nicksun98/R2S-OpenWrt
+
+* 4.1.2.5 其他大佬的原生固件
+
+欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
+
+---
+* __4.2 Friendlywrt固件__
+
+
+
+* 4.2.1 友善官方固件
+
+
 ——4.2.2 大神固件
 ———4.2.2.1 Dayong固件
 ———4.2.2.2 Chuck固件

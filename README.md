@@ -361,16 +361,39 @@ firstboot -y && reboot
 * __4.6 常见问题__
 
 Q:开机后网口灯亮，分配不到IP/分配到169.254.x.x？  
-A:确认您刷的固件网口
+A:确认您刷的固件插入正确的网口，如正确，手动分配子网内IP，若可以进入后台，恢复到出厂设置（执行重置），进行干净部署。若未解决，进行换网口操作。
 
-Q
-A
+Q:固件开启bbr加速了吗？  
+A:原生固件默认打开bbr加速，友善固件在网络-turbo acc加速打开。5.4内核的bbr没万兆bug。
 
-Q
-A
+Q:flow加速/软件流量分载/sfe加速要开吗？  
+A:flow offloading/sfe等建议带宽超过300MB的用户打开。不要同时开，开一个就好。
 
-Q
-A
+Q:HWNAT/硬件流量分载要开吗？  
+A:又不是MTK76xx，不能开！（开东西前一定知道你在干什么！）
+
+Q:DNS加速要开吗？  
+A:不建议。
+
+Q:Fullcone NAT哪里开？可以开吗？  
+A:在网络-防火墙-Fullcone打开，建议打开。找不到的主题在防火墙wan口设置里。
+
+Q:建议使用备份吗？  
+A:不建议，后果自负。
+
+其他问题可以在Telegram群[NanoPi R2S Club](https://t.me/nanopir2sshell)询问群主和管理。
 
 ---
 ### 5、OpenWrt使用基本介绍
+
+* 5.1 SSH的使用
+
+    * Windows用户：下载[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+    * macOS Linux用户：终端输入：
+    ```
+    ssh -p <你的dropbear端口号，默认22> root@<你的R2S的IP地址>
+    ```
+    *（注意，去掉尖括号。建议修改端口号为非22，lan only。输入密码不会提示位数。openwrt只有root一个用户）
+
+---
+## 未完待续，欢迎补充！

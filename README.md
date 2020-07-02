@@ -323,13 +323,39 @@ wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh &
 
 建议使用dd命令进行写盘：
 
-先将要刷的固件解压到img，通过scp命令或者文件上传功能上传到tmp/upload/文件夹内，将<openwrt.img>替换为您上传的固件名称（注意，不要加尖括号）。
+先将要刷的固件解压到img，通过scp命令或者文件上传功能上传到tmp/upload/文件夹内。  
+通过SSH逐步运行下方的代码，将<openwrt.img>替换为您上传的固件名称（注意，不要加尖括号）。
 ```
 dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
 
 reboot
 ```
+* 4.5.3 Openwrt到Openwrt
 
+也可以使用dd命令，不过建议使用内置的sysupgrade命令：
+
+确保固件是.img.gz格式，通过scp命令上传到tmp文件夹。  
+通过SSH逐步运行下方的代码，将<openwrt.img.gz>替换为您上传的固件名称（注意，不要加尖括号）。
+```
+sysupgrade -v tmp/<openwrt.img.gz>
+
+reboot
+```
+等待重启后，重连SSH，输入：
+```
+firstboot -y && reboot
+```
+
+也可以通过luci的方式进行更新：
+
+luci页面，进入系统-备份/升级，选择刷写新的固件，上传要刷写的固件.img.gz。  
+核对MD5值和SHA256值，选择刷写固件，这时您的R2S会重启。  
+*(注意！同Rootfs大小的固件，这里保不保存配置都是保存配置，TF卡转emmc的除外)*
+
+等待重启后，重连SSH，输入：
+```
+firstboot -y && reboot
+```
 
 ---
 ### 5、OpenWrt使用基本介绍

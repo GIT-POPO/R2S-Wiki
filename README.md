@@ -306,4 +306,30 @@ IP: 192.168.2.1 密码: password
     * 等待[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya补充，敬请期待！
 
 ---
-5、OpenWrt使用基本介绍
+* __4.5 在线刷机__
+
+    * NanoPi R2S支持在线升级/降级/更改固件。
+
+* 4.5.1 FriendlyWrt到FriendlyWrt
+
+部分固件内置有SongChenwen大佬的[luci-app-r2sflasher](https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher)，可实现图形化刷机。
+
+或者使用Gary大佬的在线刷机脚本：
+```
+wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
+```
+
+* 4.5.2 FriendlyWrt到Openwrt
+
+建议使用dd命令进行写盘：
+
+先将要刷的固件解压到img，通过scp命令或者文件上传功能上传到tmp/upload/文件夹内，将<openwrt.img>替换为您上传的固件名称（注意，不要加尖括号）。
+```
+dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
+
+reboot
+```
+
+
+---
+### 5、OpenWrt使用基本介绍

@@ -238,19 +238,53 @@ __自用固件__ ,极简固件，发布于releases。
 ---
 * __4.2 Friendlywrt固件__
 
-
+基于[友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh)和开源社区的努力。
 
 * 4.2.1 友善官方固件
 
+官方固件，[下载地址](http://download.friendlyarm.com/nanopir2s)
 
-——4.2.2 大神固件
-———4.2.2.1 Dayong固件
-———4.2.2.2 Chuck固件
-———4.2.2.3 Quintus Chu友善固件
-———4.2.2.4 QiuSimons固件（原生luci）
-———4.2.2.5 SongChenwen固件
-———4.2.2.6 RT固件
-———4.2.2.7 XXXXX固件（自己补充）
-—4.3 Armbian固件
-—4.4 Linux发行版固件
+* 4.2.2 大神固件
+
+
+
+* 4.2.2.1 Dayong固件
+
+
+
+* 4.2.2.2 Chuck固件
+
+
+
+* 4.2.2.3 Quintus Chu友善固件
+
+
+
+* 4.2.2.4 QiuSimons固件（原生luci)
+
+
+
+* 4.2.2.5 SongChenwen固件
+
+
+
+
+* 4.2.2.6 RT固件
+
+
+
+* 4.2.2.7 XXXXX固件（自己补充）
+
+
+
+---
+* __4.3 Armbian固件__
+
+    * 等待[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya补充，敬请期待！
+
+* __4.4 Linux发行版固件__
+
+    * 等待[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya补充，敬请期待！
+
+---
 5、OpenWrt使用基本介绍

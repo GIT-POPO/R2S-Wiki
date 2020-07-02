@@ -206,14 +206,15 @@ FriendlyWrt可编译进811ac等USB网卡，设置为N模式，5GHz。强制频�
 
     * 源于开源社区的努力。
 
-* 4.1.2.1 QiuSimons原生固件
+* 4.1.2.1 QiuSimons原生固件（404大佬）
 
 __自用固件__ ,分docker版和无docker版。  
 目前支持OLED和部分USB网卡，具体内容详见readme。  
 已托管给ctcgfw  
+*<注意，lan wan已互换>*  
 地址：https://github.com/project-openwrt/R2S-OpenWrt
 
-* 4.1.2.2 Quintus Chu原生固件
+* 4.1.2.2 Quintus Chu原生固件（502大佬）
 
 __自用固件__ ,分OpenWrt版和FriendlyWrt版，FriendlyWrt版详见4.2.2.3条目。  
 固件分为slim版和full版，目前支持OLED和部分USB网卡，具体内容详见readme和releases。  
@@ -250,17 +251,25 @@ __自用固件__ ,极简固件，发布于releases。
 
 * 4.2.2.1 Dayong固件
 
-
+分为Lean版，Lienol版(已停更)，Minimal版。最早的稳定固件作者。  
+发布于releases，支持811ac网卡，具体内容详见readme。  
+地址：https://github.com/klever1988/nanopi-openwrt
 
 * 4.2.2.2 Chuck固件
 
+__自用固件__ ,来自于Chuck魔改内核。  
+发布于releases，支持811ac网卡，具体内容详见readme和releases。  
+*<注意，lan wan已互换>*  
+地址：https://github.com/fanck0605/nanopi-r2s
 
 
-* 4.2.2.3 Quintus Chu友善固件
+* 4.2.2.3 Quintus Chu友善固件（502大佬）
 
+__自用固件__ ,分OpenWrt版和FriendlyWrt版，OpenWrt版详见4.1.2.2条目。  
+固件分为slim版，opt版，tiny版，支持811ac网卡，具体内容详见readme和releases。  
+地址：https://github.com/quintus-lab/Openwrt-R2S
 
-
-* 4.2.2.4 QiuSimons固件（原生luci)
+* 4.2.2.4 QiuSimons固件/原生luci（404大佬）
 
 
 

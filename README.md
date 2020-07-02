@@ -56,7 +56,7 @@ TF卡的兼容性和稳定性决定着刷机的成功与否和后续使用上的
 本群推荐使用朗科与京东联名的Class10/SDHC/A1的TF卡。  
 *<京东提供后续保修及换新服务>*
 
-另外大佬推荐SanDisk Industrial闪迪工业卡。MLC颗粒，均衡磨损带来更长寿命，高至85度的工作温度，更适合R2S的工作环境。
+另外大佬推荐SanDisk Industrial闪迪工业卡。MLC颗粒，均衡磨损带来更长寿命，高至85度的工作温度，同样适合R2S的工作环境。
 
 * 2.2.2 TF卡刷写建议
 
@@ -92,9 +92,17 @@ RK3328在日常使用中，发热量偏大。需要散热来保证不会达到�
 所有铝合金外壳皆出自Telegram群[NanoPi R2S Club](https://t.me/nanopir2sshell)。  
 感谢群友们为NanoPi R2S所做的贡献。
 
+__购买外壳可加入Telegram群[NanoPi R2S Club](https://t.me/nanopir2sshell)，看群置顶。或[淘宝链接](https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1613492699&activityId=156945e116dc477780f99dedf3ed91b3),领券下单更优惠__
+
 * 2.3.1.1 外壳区别
 
 外壳目前分为一代外壳，二代外壳，二代半外壳和三代外壳。
+
+> 一代外壳：为铝合金构造，外表做氧化处理，黑色高级纹理搭配顶部散热鳍片。TF卡和USB做开孔处理，其中限量版首批300件有特殊logo。
+
+> 二代外壳：为铝合金构造，外表做磨砂处理，保持铝合金原色，去掉顶部鳍片和TF卡槽，整体更协调，颜值在线。
+
+> 二代半外壳：
 
 
 * 2.3.1.2 安装方法

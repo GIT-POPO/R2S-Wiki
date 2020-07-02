@@ -200,11 +200,11 @@ FriendlyWrt可编译进811ac等USB网卡，设置为N模式，5GHz。强制频�
 
 * 4.1.1 原生支持OpenWrt固件
 
-[开发中](https://github.com/openwrt/openwrt/pull/2945)
+    * [开发中](https://github.com/openwrt/openwrt/pull/2945)
 
 * 4.1.2 Snapshot版原生固件
 
-源于开源社区的努力。
+    * 源于开源社区的努力。
 
 * 4.1.2.1 QiuSimons原生固件
 

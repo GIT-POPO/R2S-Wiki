@@ -212,25 +212,29 @@ __自用固件__ ,分docker版和无docker版。
 目前支持OLED和部分USB网卡，具体内容详见readme。  
 已托管给ctcgfw  
 *<注意，lan wan已互换>*  
-地址：https://github.com/project-openwrt/R2S-OpenWrt
+地址：https://github.com/project-openwrt/R2S-OpenWrt  
+IP: 192.168.1.1 密码: 无
 
 * 4.1.2.2 Quintus Chu原生固件（502大佬）
 
 __自用固件__ ,分OpenWrt版和FriendlyWrt版，FriendlyWrt版详见4.2.2.3条目。  
 固件分为slim版和full版，目前支持OLED和部分USB网卡，具体内容详见readme和releases。  
-地址：https://github.com/quintus-lab/Openwrt-R2S
+地址：https://github.com/quintus-lab/Openwrt-R2S  
+IP: 192.168.1.1 密码: 无
 
 * 4.1.2.3 Kane Green的原生固件
 
 __自用固件__ ,高大全固件，发布于Actions。  
 具体内容详见readme。  
-地址：https://github.com/KaneGreen/R2S-OpenWrt
+地址：https://github.com/KaneGreen/R2S-OpenWrt  
+IP: 192.168.1.1 密码: 无
 
 * 4.1.2.4 Nick Bot的原生固件
 
 __自用固件__ ,极简固件，发布于releases。  
 目前不支持OLED和无线USB网卡，具体内容详见readme和releases。  
-地址：https://github.com/nicksun98/R2S-OpenWrt
+地址：https://github.com/nicksun98/R2S-OpenWrt  
+IP: 192.168.1.1 密码: 无
 
 * 4.1.2.5 其他大佬的原生固件
 
@@ -239,7 +243,7 @@ __自用固件__ ,极简固件，发布于releases。
 ---
 * __4.2 Friendlywrt固件__
 
-    * 基于[友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh)和开源社区的努力。
+    * 基于[友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh)和开源社区的努力。来自armbian内核和openwrt上层杂交而成。
 
 * 4.2.1 友善官方固件
 
@@ -253,38 +257,44 @@ __自用固件__ ,极简固件，发布于releases。
 
 分为Lean版，Lienol版(已停更)，Minimal版。最早的稳定固件作者。  
 发布于releases，支持811ac网卡，具体内容详见readme。  
-地址：https://github.com/klever1988/nanopi-openwrt
+地址：https://github.com/klever1988/nanopi-openwrt  
+IP: 192.168.2.1 密码: password
 
 * 4.2.2.2 Chuck固件
 
 __自用固件__ ,来自于Chuck魔改内核。  
 发布于releases，支持811ac网卡，具体内容详见readme和releases。  
 *<注意，lan wan已互换>*  
-地址：https://github.com/fanck0605/nanopi-r2s
+地址：https://github.com/fanck0605/nanopi-r2s  
+IP: 192.168.2.1 密码: password
 
 
 * 4.2.2.3 Quintus Chu友善固件（502大佬）
 
 __自用固件__ ,分OpenWrt版和FriendlyWrt版，OpenWrt版详见4.1.2.2条目。  
 固件分为slim版，opt版，tiny版，支持811ac网卡，具体内容详见readme和releases。  
-地址：https://github.com/quintus-lab/Openwrt-R2S
+地址：https://github.com/quintus-lab/Openwrt-R2S  
+IP: 192.168.2.1 密码: password
 
 * 4.2.2.4 QiuSimons固件/原生luci（404大佬）
 
-
+__自用固件__ ,杂交19.07原生openwrt的luci
 
 * 4.2.2.5 SongChenwen固件
 
-
-
+分为FwF版和FriendlyWRT版，使用Chuck的魔改内核，使用支持Clash的passwall魔改版本，具体内容详见readme和releases。  
+地址：https://github.com/songchenwen/nanopi-r2s  
+IP: 192.168.2.1 密码: password
 
 * 4.2.2.6 RT固件
 
+恩山大佬，RT。(固件略过时，暂未及时更新)  
+地址：https://t.me/R2Spasswall  
+IP: 192.168.2.1 密码: password
 
+* 4.2.2.7 其他大佬的固件
 
-* 4.2.2.7 XXXXX固件（自己补充）
-
-
+欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
 
 ---
 * __4.3 Armbian固件__

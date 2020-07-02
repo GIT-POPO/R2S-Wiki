@@ -238,15 +238,15 @@ __自用固件__ ,极简固件，发布于releases。
 ---
 * __4.2 Friendlywrt固件__
 
-基于[友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh)和开源社区的努力。
+    * 基于[友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh)和开源社区的努力。
 
 * 4.2.1 友善官方固件
 
-官方固件，[下载地址](http://download.friendlyarm.com/nanopir2s)
+    * 官方固件，[下载地址](http://download.friendlyarm.com/nanopir2s)
 
 * 4.2.2 大神固件
 
-
+    * 来自开源社区。
 
 * 4.2.2.1 Dayong固件
 

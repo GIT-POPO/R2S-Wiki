@@ -1,7 +1,8 @@
 ## NanoPi-R2S操作手册
 
 ```
-欢迎查看 NanoPi-R2S 操作手册。本页旨在为 NanoPi R2S Club ，收集与解答 NanoPi-R2S 相关问题，如有更好的意见与建议，随时欢迎PR。
+欢迎查看 NanoPi-R2S 操作手册。本页旨在为 NanoPi R2S Club ，收集与解答 NanoPi-R2S 相关问题。
+如有更好的意见与建议，随时欢迎PR。
 或者群内相关发言时直接 @popo
 ```
 ### 1、R2S基本介绍
@@ -43,7 +44,7 @@ reset按键目前未使用。
 
 R2S推荐使用5V2A的USB电源，stress烤机下满载电流0.8A。  
 建议使用线径粗，接口质量好的USB-A至MicroUSB的数据线，否则概率出现问题。  
-*<接口可更改USB-C接口>*
+*<接口可更改为USB-C接口>*
 
 ---
 * 2.2 __TF卡的选择__
@@ -55,13 +56,30 @@ TF卡的兼容性和稳定性决定着刷机的成功与否和后续使用上的
 本群推荐使用朗科与京东联名的Class10/SDHC/A1的TF卡。  
 *<京东提供后续保修及换新服务>*
 
+另外大佬推荐SanDisk Industrial闪迪工业卡。MLC颗粒，均衡磨损带来更长寿命，高至85度的工作温度，更适合R2S的工作环境。
+
 * 2.2.2 TF卡刷写建议
 
 刷写软件建议使用win32diskimager和rufus。  
 我们建议在刷写原生固件前，进行覆盖格式化或进行快速格式化后填入1GB左右的大文件。  
-以及再刷写成功后进行`firstboot -y` 和 `reboot`的操作。
+以及再刷写成功后进行`firstboot -y && reboot now`的操作。
 
 * 2.2.3 TF卡的其他常见问题
+
+Q:为什么启动不了系统？  
+A:首先根据上文确定是不是设置错误。比如lan wan互换，比如未自动获取IP地址。建议根据2.2.2的教程重新刷写TF卡。  
+*<另外部分TF卡不兼容R2S，甚至兼容友善EXT4不兼容SquashFS>*
+
+Q:为什么TF卡读取不了/卡容量减少/刷卡掉速?  
+A:建议使用专业软件删除分区，重新格式化TF卡。或更换读卡器。出现严重问题联系销售商换新。
+
+Q:刷了SquashFS的系统为什么原来的配置还在？  
+A:因为TF卡的特性，Upper Layer很难被抹掉。当固件Rootfs大小相同时会出现此类状况。  
+使用SSH等工具进入R2S：  
+```
+umount /overlay && jffs2reset && reboot now
+```
+[详情链接](https://openwrt.org/docs/guide-user/troubleshooting/failsafe_and_factory_reset)
 
 ---
 * 2.3 __散热选择__

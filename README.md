@@ -236,7 +236,17 @@ __自用固件__ ,极简固件，发布于releases。
 地址：https://github.com/nicksun98/R2S-OpenWrt  
 IP: 192.168.1.1 密码: 无
 
-* 4.1.2.5 其他大佬的原生固件
+* 4.1.2.5 子墨大佬固件
+
+__自用固件__ ,极简固件，发布于releases。  
+支持0.91寸和0.96寸OLED, 具体内容详见readme和releases。
+*<注意，lan wan已互换>*  
+地址：https://github.com/msylgj/R2S-OpenWrt  
+IP: 192.168.2.1 密码: password
+
+* 4.1.2.6 其他大佬的原生固件
+
+目前Lean的源库支援NanoPi R2S的原生编译。但是目前未改好irq等等问题，使用舒适度和性能完整度暂时落后于本群进度。
 
 欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
 
@@ -292,7 +302,13 @@ IP: 192.168.2.1 密码: password
 地址：https://t.me/R2Spasswall  
 IP: 192.168.2.1 密码: password
 
-* 4.2.2.7 其他大佬的固件
+* 4.2.2.7 eSir固件
+
+YouTuber技术大神，eSir。(固件略过时，暂未及时更新)  
+地址：https://drive.google.com/drive/folders/1DPy8lXhg2btbHsTvpUGVZF2k1rmT7DXA  
+IP: 192.168.5.1 密码: password
+
+* 4.2.2.8 其他大佬的固件
 
 欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
 
@@ -382,6 +398,9 @@ A:在网络-防火墙-Fullcone打开，建议打开。找不到的可能是主�
 Q:建议使用备份吗？  
 A:不建议，后果自负。
 
+Q:为什么更改不了lan IP/管理地址？  
+A:这是OpenWrt 19.07带来的新Feature，防止不懂的人乱改。点击保存并应用旁边向下的箭头，点击强制应用，或参考5.1.1条目。
+
 其他问题可以在Telegram群[NanoPi R2S Club](https://t.me/nanopir2sshell)询问群主和管理。
 
 ---
@@ -395,6 +414,36 @@ A:不建议，后果自负。
     ssh -p <你的dropbear端口号，默认22> root@<你的R2S的IP地址>
     ```
     *（注意，去掉尖括号。建议修改端口号为非22，lan only。输入密码不会提示位数。openwrt只有root一个用户）
+    
+* 5.1.1 SSH的初步体验
+
+    * 使用vi/vim命令更改lan IP 
+
+[vi/vim命令教程](https://www.runoob.com/linux/linux-vim.html)
+```
+vim /etc/config/network
+```
+*<换网口eth，改wan口，lan口配置，更改mac地址等均可通过network文件更改，希望大家举一反三，一通百通>*
+
+    * 使用SSH查看设备温度
+```    
+cat /sys/class/thermal/thermal_zone0/temp
+```
+    * 使用SSH查看设备Soc频率
+```
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+```
+    * 使用cputemp.sh脚本查看温度频率
+    
+下载脚本到/bin路径下
+```
+wget -P /bin https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O cputemp.sh
+```
+使用脚本
+```
+sh /bin/cputemp.sh
+```
+退出使用`Ctrl + C`
 
 ---
 ## 未完待续，欢迎补充！

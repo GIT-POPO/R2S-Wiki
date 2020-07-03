@@ -437,7 +437,7 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
     
 下载脚本到/bin路径下
 ```
-wget -P /bin https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O cputemp.sh
+wget https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O /bin/cputemp.sh
 ```
 使用脚本
 ```

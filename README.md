@@ -236,7 +236,7 @@ __自用固件__ ,极简固件，发布于releases。
 地址：https://github.com/nicksun98/R2S-OpenWrt  
 IP: 192.168.1.1 密码: 无
 
-* 4.1.2.5 子墨大佬固件
+* 4.1.2.5 子冥大佬固件
 
 __自用固件__ ,极简固件，发布于releases。  
 支持0.91寸和0.96寸OLED, 具体内容详见readme和releases。

@@ -272,7 +272,7 @@ IP: 192.168.2.1 密码: password
 * 4.2.2.3 Quintus Chu友善固件（502大佬）
 
 __自用固件__ ,分OpenWrt版和FriendlyWrt版，OpenWrt版详见4.1.2.2条目。  
-固件分为slim版，opt版，tiny版，支持811ac网卡，具体内容详见readme和releases。  
+固件分为slim版，opt版，tiny版，另有多拨特别版。支持811ac网卡，具体内容详见readme和releases。  
 地址：https://github.com/quintus-lab/Openwrt-R2S  
 IP: 192.168.2.1 密码: password
 
@@ -318,6 +318,7 @@ IP: 192.168.2.1 密码: password
 ```
 wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
 ```
+*<3 4的ardanzhu固件链接已失效>*
 
 * 4.5.2 FriendlyWrt到Openwrt
 

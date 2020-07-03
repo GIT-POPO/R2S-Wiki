@@ -426,20 +426,24 @@ vim /etc/config/network
 *<换网口eth，改wan口，lan口配置，更改mac地址等均可通过network文件更改，希望大家举一反三，一通百通>*
 
     * 使用SSH查看设备温度
+
 ```    
 cat /sys/class/thermal/thermal_zone0/temp
 ```
     * 使用SSH查看设备Soc频率
+
 ```
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
 ```
     * 使用cputemp.sh脚本查看温度频率
     
 下载脚本到/bin路径下
+
 ```
 wget -P /bin https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O cputemp.sh
 ```
 使用脚本
+
 ```
 sh /bin/cputemp.sh
 ```

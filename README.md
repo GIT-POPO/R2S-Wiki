@@ -206,7 +206,7 @@
 
   * 4.1.2 Snapshot 版原生固件
 
-    * 源于开源社区的努力。
+    （源于开源社区的努力）
 
     * 4.1.2.1 QiuSimons 原生固件（404大佬）
 
@@ -335,7 +335,7 @@
     ```
     wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
     ```
-          *<3 4的ardanzhu固件链接已失效>*
+       *<3 4的 ardanzhu 固件链接已失效>*
 
   * 4.5.2 FriendlyWrt 到 Openwrt
 

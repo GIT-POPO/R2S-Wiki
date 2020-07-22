@@ -65,7 +65,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
     * 刷写软件建议使用 [win32diskimager](https://win32diskimager.download/) 和 [rufus](https://rufus.ie/)。  
     * 我们建议在刷写原生固件前，进行覆盖格式化或进行快速格式化后填入 1GB 左右的大文件。  
-    * 以及再刷写成功后进行 `firstboot -y && reboot now` 的操作。  
+    * 以及再刷写成功后进行 `firstboot -y && reboot now` 的操作。（仅支持SquashFS)  
 
   * 2.2.3 TF 卡的其他常见问题  
 

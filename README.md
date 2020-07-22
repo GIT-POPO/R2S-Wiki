@@ -36,6 +36,7 @@
   * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者TF卡不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
   * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
   * reset按键目前未使用。
+  *<注意！7月17日后真原生固件，sys灯常亮和lan口网口灯不亮是正常现象，等待上游更新>* 
 
 ---
 ### 2、R2S所需配件
@@ -57,6 +58,8 @@
     *<京东提供后续保修及换新服务>*
 
     * 另外大佬推荐 “SanDisk Industrial闪迪工业卡” 。MLC颗粒，均衡磨损带来更长寿命，高至85度的工作温度，同样适合R2S的工作环境。
+    
+    * 如果想没有任何问题，可以牺牲外观选用TF-eMMC的特殊TF卡启动，详讯群内Darya。（只适合刷机狂魔）
 
   * 2.2.2 TF卡刷写建议
 
@@ -91,6 +94,7 @@
 
     所有铝合金外壳皆出自 Telegram群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。  
     感谢群友们为 NanoPi R2S 所做的贡献。
+    现有友善官方外壳发售，类似于本群一代外壳。
 
     __购买外壳可加入 Telegram群 [NanoPi R2S Club](https://t.me/nanopir2sshell)，看群置顶。或 [淘宝链接](https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1613492699&activityId=156945e116dc477780f99dedf3ed91b3)，领券下单更优惠。__
 
@@ -105,6 +109,8 @@
       > 二代半外壳：为铝合金构造，外表做磨砂氧化处理，保持铝合金原色，相比于二代加入重新设计高级TF卡槽，插卡取卡更便捷。
 
       > 三代外壳：在二代半外壳的基础上，加入0.91英寸OLED屏幕(详见2.5条目)，简单安装方法，信息获取更高效。
+      
+      > 友善官方外壳：类似于一代外壳，用料变薄，优化TF卡口和外形设计。Soc铝柱变短，靠硅脂垫连接Soc，背后无压片。
 
     * 2.3.1.2 安装方法
 
@@ -120,7 +126,7 @@
     * 2.3.1.4 常见问题
 
       **Q: 铝合金外壳能降低到多少度？**  
-      A: 这个要根据室温和空气流通速度来决定。铝合金外壳的最主要目的是满负载情况下能不碰温度墙，稳定1.512GHz的Soc主频不掉频，全力输出。以以往的经验来说，待机状态下Soc温度是室温+20以内，弱电箱内+25以内。如果过高考虑下安装问题和硅脂接触面积。
+      A: 这个要根据室温和空气流通速度来决定。铝合金外壳的最主要目的是满负载情况下能不碰温度墙，稳定1608MHz的Soc主频不掉频，全力输出。以以往的经验来说，待机状态下Soc温度是室温+20以内，弱电箱内+25以内。如果过高考虑下安装问题和硅脂接触面积。
 
       **Q: 绝缘胶带需要贴吗？**  
       A: 可贴可不贴。
@@ -133,6 +139,9 @@
 
       **Q: 硅脂垫是干什么的？可以不用吗？**  
       A: 硅脂垫是贴主板后侧到铝壳底盖的，主要充当散热器弹簧的用途，给Soc和铝柱一个额外的压力，帮助更好散热。
+      
+      **Q: 群内外壳和友善外壳有什么区别？**
+      A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有OLED的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。
 
   * 2.3.2 风扇外壳
 
@@ -204,112 +213,67 @@
 
     * [开发中](https://github.com/openwrt/openwrt/pull/2945)
 
-  * 4.1.2 Snapshot 版原生固件
+  * 4.1.2 Snapshot 版真·原生固件
 
-    （源于开源社区的努力）
+    源于开源社区的努力，使用OpenWrt官方源码编译，大部分为自用固件，有特殊需求请自行编译，不提供技术支持，建议采用。已有固件，自行甄选使用。固件分为Ext4版和SquashFS版，除了新人实在不能启动SquashFS的固件，才建议使用Ext4固件。Ext4固件不能使用firstboot等操作，误操作后无法重置系统，极大部分原生固件都为SquashFS。
+    
+    __固件介绍详见各固件仓库主页的ReadMe和Releases。__ 部分超频固件保持1.45V电压超频至1608MHz，发热不变，更高性能。部分固件自带Soc调频，不懂不要动。电压表1GHz下都相同，不建议频率低于800MHz，一切问题后果自负。
+    
+    有任何奇怪问题SquashFS可执行重置，部分固件带了`fuck`组件，使用更佳。依然不建议使用备份和升级保留备份。
 
-    * 4.1.2.1 QiuSimons 原生固件（404大佬）
+    * 4.1.2.1 原生固件列表
+      
+      QiuSimons（404大佬）  
+      地址：https://github.com/project-openwrt/R2S-OpenWrt
+      
+      Quintus Chu（502大佬）
+      地址：https://github.com/quintus-lab/Openwrt-R2S
+      
+      Kane Green  
+      地址：https://github.com/KaneGreen/R2S-OpenWrt
+      
+      Nick Bot  
+      地址：https://github.com/nicksun98/R2S-OpenWrt
+      
+      墨子冥
+      地址：https://github.com/msylgj/R2S-OpenWrt
+      
+      欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
+      
+    * 4.1.2.2 基于Lean源码的原生固件
 
-      __自用固件__ ,分docker版和无docker版。  
-      目前支持OLED和部分USB网卡，具体内容详见readme。  
-      已托管给ctcgfw  
-      *<注意，lan wan已互换>*  
-      地址：https://github.com/project-openwrt/R2S-OpenWrt  
-      IP: 192.168.1.1 密码: 无
+      目前Lean的源库支援NanoPi R2S的原生编译。但是目前未改好irq等等问题，使用舒适度和性能完整度暂时落后于本群进度。Chuck采用友善irq修改版的固件是少数做好优化的固件。
 
-    * 4.1.2.2 Quintus Chu原生固件（502大佬）
-
-      __自用固件__ ,分OpenWrt版和FriendlyWrt版，FriendlyWrt版详见4.2.2.3条目。  
-      固件分为slim版和full版，目前支持OLED和部分USB网卡，具体内容详见readme和releases。  
-      地址：https://github.com/quintus-lab/Openwrt-R2S  
-      IP: 192.168.1.1 密码: 无
-
-    * 4.1.2.3 Kane Green的原生固件
-
-      __自用固件__ ,高大全固件，发布于Actions。  
-      具体内容详见readme。  
-      地址：https://github.com/KaneGreen/R2S-OpenWrt  
-      IP: 192.168.1.1 密码: 无
-
-    * 4.1.2.4 Nick Bot的原生固件
-
-      __自用固件__ ,极简固件，发布于releases。  
-      目前不支持OLED和无线USB网卡，具体内容详见readme和releases。  
-      地址：https://github.com/nicksun98/R2S-OpenWrt  
-      IP: 192.168.1.1 密码: 无
-
-    * 4.1.2.5 子冥大佬固件
-
-      __自用固件__ ,极简固件，发布于releases。  
-      支持0.91寸和0.96寸OLED, 具体内容详见readme和releases。  
-      *<注意，lan wan已互换>*  
-      地址：https://github.com/msylgj/R2S-OpenWrt  
-      IP: 192.168.2.1 密码: password
-
-    * 4.1.2.6 其他大佬的原生固件
-
-      目前Lean的源库支援NanoPi R2S的原生编译。但是目前未改好irq等等问题，使用舒适度和性能完整度暂时落后于本群进度。
-
+      Chuck  
+      https://github.com/fanck0605/openwrt-nanopi-r2s
+      
       欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
 
 ---
 * __4.2 Friendlywrt固件__
 
-  基于 [友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh) 和 开源社区 的努力。来自 armbian内核 和 openwrt上层 杂交而成。
+  基于 [友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh) 和 开源社区 的努力。来自 armbian内核 和 openwrt上层 杂交而成。存在防火墙阻断IPv4流量，wan口不能重播，crontab等各种问题，可以靠脚本守护。
 
   * 4.2.1 友善官方固件
 
     * 官方固件，[下载地址](http://download.friendlyarm.com/nanopir2s)
 
-  * 4.2.2 来自开源社区的大神固件
+  * 4.2.2 来自开源社区的友善固件
 
-
-    * 4.2.2.1 Dayong固件
-
-      分为Lean版，Lienol版(已停更)，Minimal版。最早的稳定固件作者。  
-      发布于releases，支持811ac网卡，具体内容详见readme。  
-      地址：https://github.com/klever1988/nanopi-openwrt  
-      IP: 192.168.2.1 密码: password
-
-    * 4.2.2.2 Chuck固件
-
-      __自用固件__ ,来自于Chuck魔改内核。  
-      发布于releases，具体内容详见readme和releases。  
-      *<注意，lan wan已互换>*  
-      地址：https://github.com/fanck0605/nanopi-r2s  
-      IP: 192.168.2.1 密码: password
-
-
-    * 4.2.2.3 Quintus Chu友善固件（502大佬）
-
-      __自用固件__ ,分OpenWrt版和FriendlyWrt版，OpenWrt版详见4.1.2.2条目。  
-      固件分为slim版，opt版，tiny版，另有多拨特别版。支持811ac网卡，具体内容详见readme和releases。  
-      地址：https://github.com/quintus-lab/Openwrt-R2S  
-      IP: 192.168.2.1 密码: password
-
-    * 4.2.2.4 QiuSimons固件/原生luci（404大佬）
-
-      __自用固件__ ,杂交19.07原生openwrt的luci
-
-    * 4.2.2.5 SongChenwen固件
-
-      分为FwF版和FriendlyWRT版，使用Chuck的魔改内核，使用支持Clash的passwall魔改版本，具体内容详见readme和releases。  
-      地址：https://github.com/songchenwen/nanopi-r2s  
-      IP: 192.168.2.1 密码: password
-
-    * 4.2.2.6 RT固件
-
-      恩山大佬，RT。(固件略过时，暂未及时更新)  
-      地址：https://t.me/R2Spasswall  
-      IP: 192.168.2.1 密码: password
-
-    * 4.2.2.7 eSir固件
-
-      YouTuber技术大神，eSir。(固件略过时，暂未及时更新)  
+      Dayong  
+      地址：https://github.com/klever1988/nanopi-openwrt
+      
+      Chuck (已弃)  
+      地址：https://github.com/fanck0605/nanopi-r2s
+      
+      Song Chenwen  
+      地址：https://github.com/songchenwen/nanopi-r2s
+      
+      RT (过于古早)  
+      地址：https://t.me/R2Spasswall
+      
+      eSir (过于古早)
       地址：https://drive.google.com/drive/folders/1DPy8lXhg2btbHsTvpUGVZF2k1rmT7DXA  
-      IP: 192.168.5.1 密码: password
-
-    * 4.2.2.8 其他大佬的固件
 
       欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。
 
@@ -395,6 +359,9 @@
 
   **Q: Fullcone NAT哪里开？可以开吗？**  
   A: 在网络-防火墙-Fullcone打开，建议打开。找不到的可能是主题存在兼容性问题，可以在防火墙的wan口设置里更改。
+  
+  **Q: 原生固件可以使用Sysupgrade吗？
+  A: 可以上传img.gz文件在线升级，不建议保留配置。RootFS相同的固件，不保存配置也是保存配置，TF卡特性决定，参考2.2.3条目。
 
   **Q: 建议使用备份吗？**  
   A: 不建议，后果自负。

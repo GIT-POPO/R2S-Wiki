@@ -245,9 +245,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       
     * 4.1.2.2 基于 Lean 源码的原生固件  
 
-      目前 Lean 的源库支援 NanoPi R2S 的原生编译。但是目前未改好 irq 等等问题，使用舒适度和性能完整度暂时落后于本群进度。Chuck 采用友善 irq 
-      
-      修改版的固件是少数做好优化的固件。  
+      目前 Lean 的源库支援 NanoPi R2S 的原生编译。但是目前未改好 irq 等等问题，使用舒适度和性能完整度暂时落后于本群进度。Chuck 采用友善 irq 修改版的固件是少数做好优化的固件。  
 
       Chuck  
       https://github.com/fanck0605/openwrt-nanopi-r2s  

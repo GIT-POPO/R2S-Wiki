@@ -282,7 +282,7 @@
 
   * 来自[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya的博客
   
-  地址：e.g.daryasyr.com
+  地址： e.g.daryasyr.com
 
 ---
 * __4.4 Linux发行版固件__

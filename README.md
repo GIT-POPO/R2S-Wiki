@@ -36,7 +36,7 @@
   * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者TF卡不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
   * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
   * reset按键目前未使用。  
-  *<注意！7月17日后真原生固件，sys灯常亮和lan口网口灯不亮是正常现象，等待上游更新>* 
+  *<注意！7月17日后真原生固件，sys灯引导时闪烁，启动后常亮和lan口网口灯不亮是正常现象，等待上游更新>* 
 
 ---
 ### 2、R2S所需配件
@@ -82,7 +82,8 @@
     ```
     jffs2reset -y && reboot now
     ```
-  
+    
+    其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。 
 
 ---
 * __2.3 散热选择__
@@ -142,6 +143,8 @@
       
       **Q: 群内外壳和友善外壳有什么区别？**  
       A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有OLED的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。
+      
+      其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。
 
   * 2.3.2 风扇外壳
 
@@ -372,7 +375,7 @@
   **Q: 为什么更改不了lan IP/管理地址？**  
   A: 这是OpenWrt 19.07带来的新Feature，防止不懂的人乱改。点击保存并应用旁边向下的箭头，点击强制应用，或参考5.1.1条目。
 
-  其他问题可以在Telegram群[NanoPi R2S Club](https://t.me/nanopir2sshell)询问群主和管理。
+  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。
 
 ---
 ### 5、OpenWrt使用基本介绍

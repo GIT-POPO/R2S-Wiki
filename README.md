@@ -35,7 +35,7 @@
   * 灯光前面板由 wan lan绿色指示灯 和 sys红色指示灯 组成，wan lan指示灯在部分固件下不能亮起，sys指示灯在开机状态时，是红色双闪状态。  
   * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者TF卡不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
   * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
-  * reset按键目前未使用。
+  * reset按键目前未使用。  
   *<注意！7月17日后真原生固件，sys灯常亮和lan口网口灯不亮是正常现象，等待上游更新>* 
 
 ---
@@ -93,7 +93,7 @@
   * 2.3.1 铝合金外壳
 
     所有铝合金外壳皆出自 Telegram群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。  
-    感谢群友们为 NanoPi R2S 所做的贡献。
+    感谢群友们为 NanoPi R2S 所做的贡献。  
     现有友善官方外壳发售，类似于本群一代外壳。
 
     __购买外壳可加入 Telegram群 [NanoPi R2S Club](https://t.me/nanopir2sshell)，看群置顶。或 [淘宝链接](https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1613492699&activityId=156945e116dc477780f99dedf3ed91b3)，领券下单更优惠。__
@@ -140,7 +140,7 @@
       **Q: 硅脂垫是干什么的？可以不用吗？**  
       A: 硅脂垫是贴主板后侧到铝壳底盖的，主要充当散热器弹簧的用途，给Soc和铝柱一个额外的压力，帮助更好散热。
       
-      **Q: 群内外壳和友善外壳有什么区别？**
+      **Q: 群内外壳和友善外壳有什么区别？**  
       A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有OLED的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。
 
   * 2.3.2 风扇外壳
@@ -226,7 +226,7 @@
       QiuSimons（404大佬）  
       地址：https://github.com/project-openwrt/R2S-OpenWrt
       
-      Quintus Chu（502大佬）
+      Quintus Chu（502大佬）  
       地址：https://github.com/quintus-lab/Openwrt-R2S
       
       Kane Green  
@@ -235,7 +235,7 @@
       Nick Bot  
       地址：https://github.com/nicksun98/R2S-OpenWrt
       
-      墨子冥
+      墨子冥  
       地址：https://github.com/msylgj/R2S-OpenWrt
       
       欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。

@@ -251,6 +251,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
       Chuck  
       https://github.com/fanck0605/openwrt-nanopi-r2s  
+      *<注意 Branch >*  
       
       欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
 

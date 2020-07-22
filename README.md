@@ -272,7 +272,7 @@
       RT (过于古早)  
       地址：https://t.me/R2Spasswall
       
-      eSir (过于古早)
+      eSir (过于古早)  
       地址：https://drive.google.com/drive/folders/1DPy8lXhg2btbHsTvpUGVZF2k1rmT7DXA  
 
       欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。

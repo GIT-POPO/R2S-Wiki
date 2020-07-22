@@ -279,7 +279,10 @@
 
 ---
 * __4.3 Armbian固件__
-  * 等待[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya补充，敬请期待！
+
+  * 来自[NanoPi R2S Club](https://t.me/nanopir2sshell)群主Darya的博客
+  
+  地址：e.g.daryasyr.com
 
 ---
 * __4.4 Linux发行版固件__

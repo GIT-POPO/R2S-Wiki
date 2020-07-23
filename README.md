@@ -36,7 +36,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者 TF卡 不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
   * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
   * reset 按键目前未使用。  
-  *<注意！7 月 17 日后真原生固件，sys 灯引导时闪烁，启动后常亮和 lan 口网口灯不亮是正常现象，等待上游更新>*  
+  *<注意！7 月 17 日后真原生固件，sys 灯引导时闪烁，启动后常亮和 lan 口网口灯不亮是正常现象，等待上游更新。>*  
+  *<7月22日后加入新 patch 解决 lan 口网口灯不亮的问题。电平灯和 wan 相反。>*  
 
 ---  
 ### 2、R2S 所需配件  
@@ -216,7 +217,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
     * [开发中](https://github.com/openwrt/openwrt/pull/2945)  
 
-  * 4.1.2 Snapshot 版真·原生固件  
+  * 4.1.2 Snapshot 版原生固件  
 
     源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 Ext4 版和 SquashFS 版，除了新人启动 SquashFS 的固件一直失败，实在没办法启动，才建议使用 Ext4 固件。Ext4 固件不能使用 firstboot 等操作，误操作后无法重置系统，极大部分原生固件都为 SquashFS。  
     
@@ -231,6 +232,10 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       
       Quintus Chu（502大佬）  
       地址：https://github.com/quintus-lab/Openwrt-R2S  
+      
+      天灵（ctcgfw大佬）
+      地址：t.me/nanopi_r2s  
+      *<包含18.06源码版>*  
       
       Kane Green  
       地址：https://github.com/KaneGreen/R2S-OpenWrt  

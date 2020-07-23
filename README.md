@@ -233,8 +233,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       Quintus Chu（502大佬）  
       地址：https://github.com/quintus-lab/Openwrt-R2S  
       
-      天灵（ctcgfw大佬）
-      地址：t.me/nanopi_r2s  
+      天灵（ctcgfw大佬）  
+      地址：https://t.me/nanopi_r2s  
       *<包含18.06源码版>*  
       
       Kane Green  
@@ -291,7 +291,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 来自 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 的博客  
   
-    地址： e.g.daryasyr.com  
+    地址: https://e.g.daryasyr.com  
 
 ---  
 * __4.4 Linux 发行版固件__  

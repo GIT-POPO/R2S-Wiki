@@ -395,7 +395,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     
   * 5.1.1 SSH 的初步体验  
    
-      * 更改 LAN IP（注意，不要加尖括号）
+    * 更改 LAN IP（注意，不要加尖括号）
     ```
     uci set network.lan.ipaddr=<新的 LAN 地址>
     uci commit network

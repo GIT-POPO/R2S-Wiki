@@ -262,6 +262,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 * __4.2 FriendlyWrt 固件__  
 
   基于 [友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh) 和 开源社区 的努力。来自 Armbian 内核 和 OpenWrt 主线源码 杂交而成。存在防火墙阻断 IPv4 流量，WAN 口不能重播，Crontab 等各种问题，可以靠脚本守护。  
+  
+  __这个区域就是给你看看的，就是告诉你曾经有，别真傻乎乎用了。没错就是说你呢，屏幕前看Wiki的小白。__  
 
   * 4.2.1 友善官方固件  
 

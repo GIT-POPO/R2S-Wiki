@@ -261,7 +261,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 ---  
 * __4.2 FriendlyWrt 固件__  
   
-  已不推荐使用，内容已转移，[点击查看](https://github.com/RikudouPatrickstar/R2S-Wiki/blob/master/friendlywrt.md)  
+  已不推荐使用，内容已转移，[点击查看](https://github.com/nicksun98/R2S-Wiki/blob/master/friendlywrt.md)  
  
 
 ---  

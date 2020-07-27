@@ -260,33 +260,9 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
 ---  
 * __4.2 FriendlyWrt 固件__  
-
-  基于 [友善官方源码](https://wiki.friendlyarm.com/wiki/index.php/How_to_Build_FriendlyWrt/zh) 和 开源社区 的努力。来自 Armbian 内核 和 OpenWrt 主线源码 杂交而成。存在防火墙阻断 IPv4 流量，WAN 口不能重播，Crontab 等各种问题，可以靠脚本守护。  
   
-  __这个区域就是给你看看的，就是告诉你曾经有，别真傻乎乎用了。没错就是说你呢，屏幕前看Wiki的小白。__  
-
-  * 4.2.1 友善官方固件  
-
-    * 官方固件，[下载地址](http://download.friendlyarm.com/nanopir2s)  
-
-  * 4.2.2 来自开源社区的友善固件  
-
-      Dayong  
-      地址：[klever1988/nanopi-openwrt](https://github.com/klever1988/nanopi-openwrt)  
-      
-      Chuck（已弃）  
-      地址：[fanck0605/nanopi-r2s](https://github.com/fanck0605/nanopi-r2s)  
-      
-      Song Chenwen  
-      地址：[songchenwen/nanopi-r2s](https://github.com/songchenwen/nanopi-r2s)  
-      
-      RT（过于古早）  
-      地址：[Telegram @R2Spasswall](https://t.me/R2Spasswall)  
-      
-      eSir（过于古早）  
-      地址：https://drive.google.com/drive/folders/1DPy8lXhg2btbHsTvpUGVZF2k1rmT7DXA  
-
-      欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
+  已不推荐使用，内容已转移，[点击查看](https://github.com/RikudouPatrickstar/R2S-Wiki/blob/master/friendlywrt.md)  
+ 
 
 ---  
 * __4.3 Armbian 固件__  

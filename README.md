@@ -219,7 +219,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     
     源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
-  * 4.1.2 群友基于原生 OpenWrt 源码的预编译固件
+  * 4.1.2 群友基于原生 OpenWrt 源码的修改版预编译固件
 
     源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。  
     

@@ -215,49 +215,48 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 4.1.1 原生支持 OpenWrt 固件  
 
-    * [开发中](https://git.openwrt.org/?p=openwrt/staging/blocktrron.git;a=shortlog;h=refs/heads/nanopi-r2s)  
+    * 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org/) 官方和 [CTCGFW](https://github.com/project-openwrt) 项目组，以及世界各地为此努力的朋友们。  
+    
+    源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
-  * 4.1.2 SNAPSHOT 版类原生固件  
+  * 4.1.2 群友基于原生 OpenWrt 源码的预编译固件
 
     源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。  
     
     __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1GHz 下都相同，不建议频率低于 800MHz，一切问题后果自负。  
     
     有任何奇怪问题 SquashFS 可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。  
+      
+    QiuSimons（404 大佬）  
+    地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
+      
+    Quintus Chu（502 大佬）  
+    地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
+      
+    CN_SZTL（高大全版）  
+    地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
+    *<包含 18.06 版本>*  
+      
+    Kane Green  
+    地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
+      
+    Nick Bot  
+    地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
+      
+    墨子冥  
+    地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
+      
+    欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
+      
+  * 4.1.3 基于 Jayanta525 patch 的原生固件尝试  
 
-    * 4.1.2.1 类原生固件推荐列表  
-      
-      QiuSimons（404 大佬）  
-      地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
-      
-      Quintus Chu（502 大佬）  
-      地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
-      
-      CN_SZTL（高大全版）  
-      地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
-      *<包含 18.06 版本>*  
-      
-      Kane Green  
-      地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
-      
-      Nick Bot  
-      地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
-      
-      墨子冥  
-      地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
-      
-      欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
-      
-    * 4.1.2.2 基于 Lean 源码的原生固件  
+    基于 [Jayanta525](https://github.com/jayanta525) 的 patch 编译，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度落后于 OpenWrt 官方以及群友版本。  
+    目前 Lean 的源库是基于此编译。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
 
-      目前 Lean 的源库支援 NanoPi R2S 的原生编译。但是目前未改好 IRQ 等等问题，使用舒适度和性能完整度暂时落后于本群进度。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
-
-      Chuck  
-      地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
-      *<注意 Branch>*  
-      
-      欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
-
+    Chuck  
+    地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
+    *<注意 Branch>*  
+    
 ---  
 * __4.2 FriendlyWrt 固件__  
   

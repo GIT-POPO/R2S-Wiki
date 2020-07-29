@@ -27,18 +27,25 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   > 供电：直流 5V / 2A  
   > 使用温度：0℃ 到 80℃  
 
-  > [友善官方详细介绍](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)  
+  [友善官方详细介绍](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)  
 
 ---  
-* __1.2 灯光按键介绍__  
+* __1.2 灯光、按键介绍__  
 
-  * 灯光前面板由 WAN LAN 绿色指示灯 和 SYS 红色指示灯 组成，WAN LAN 指示灯在部分固件下不能亮起，SYS 指示灯在开机状态时，是红色双闪状态。  
-  * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者 TF卡 不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
-  * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
-  * Reset 按键目前未定义。  
-  *<注意！7 月 17 日后类原生固件，SYS 灯引导时闪烁，启动后常亮和 LAN 口网口灯不亮是正常现象，等待上游更新。>*  
-  *<7 月 22 日后加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反。>*  
-  *<7 月 28 日后官方正式编写代码支持 LAN 口电平灯显示，状态和 WAN 相同（接入后绿灯常亮，传输数据时黄灯闪烁）。>*  
+  1.2.1 灯光介绍
+
+    * 灯光前面板由 WAN LAN 绿色指示灯 和 SYS 红色指示灯 组成，WAN LAN 指示灯在部分固件下不能亮起，SYS 指示灯在开机状态时，是红色双闪状态。  
+    * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者 TF卡 不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
+    * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。    
+    * 类原生固件灯光说明：  
+    
+      > 7 月 17 日后，SYS 灯引导时闪烁，启动后常亮和 LAN 口网口灯不亮是正常现象。  
+      > 7 月 22 日后，加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反（接入后黄灯常亮，传输数据时绿灯闪烁）。  
+      > 7 月 28 日后，官方正式编写代码支持 LAN 口电平灯显示，状态和 WAN 相同（接入后绿灯常亮，传输数据时黄灯闪烁）。   
+
+  1.2.2 按键介绍
+
+    * Reset 按键：目前未定义。
 
 ---  
 ### 2、R2S 所需配件  
@@ -59,7 +66,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     * 本群推荐使用 “朗科与京东联名的 Class 10 / SDHC / A1 的 TF 卡”。  
     *<京东提供后续保修及换新服务>*  
 
-    * 另外大佬推荐 “SanDisk Industrial 闪迪工业卡” 。MLC 颗粒，均衡磨损带来更长寿命，高至 85 度的工作温度，同样适合 R2S 的工作环境。  
+    * “SanDisk Industrial 闪迪工业卡” （存在一定风险，请自行甄别）。MLC 颗粒，均衡磨损带来更长寿命，高至 85 度的工作温度，同样适合 R2S 的工作环境。  
     
     * 如果想没有任何问题，可以牺牲外观选用 TF-eMMC 的特殊 TF 卡启动，详讯群内 Darya。（只适合刷机狂魔）  
 
@@ -90,8 +97,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 ---  
 * __2.3 散热选择__  
 
-  RK3328 在日常使用中，发热量偏大。需要散热来保证不会达到温度墙而掉频。  
-  RK3328 的温度墙是 85℃  
+  RK3328 在日常使用中，发热量偏大。需要散热来保证不会达到温度墙（85 ℃）而掉频。  
 
   * 2.3.1 铝合金外壳  
 
@@ -124,6 +130,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       半导体制冷片采用珀耳帖效应，安装在铝壳上可显著降低 Soc 温度。  
       注意做好热面散热和温控，否则会损坏制冷片和凝水导致 R2S 主板进液。  
       外壳外加装风扇会进一步降低 Soc 的温度。  
+      
       交流讨论可加入 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)  
 
     * 2.3.1.4 常见问题  
@@ -160,6 +167,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 * __2.4 USB 网卡__  
 
   * FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5 GHz。强制频宽 40 MHz，信道 40。重启后，可以跑到 100 Mbps 左右。  
+
   * 原生 OpenWrt 可选用 MT7601 等网卡，具体参照固件支持。  
 
 ---  
@@ -216,17 +224,23 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 4.1.1 原生 OpenWrt 支持  
 
-    * 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org) 官方、[Project OpenWrt](https://github.com/project-openwrt) 项目组、[Quintus Chu](https://t.me/quintuschu) 大佬，以及世界各地为此努力的朋友们。  
+    2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org) 官方、[Project OpenWrt](https://github.com/project-openwrt) 项目组、[Quintus Chu](https://t.me/quintuschu) 大佬，以及世界各地为此努力的朋友们。  
     
     源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
   * 4.1.2 群友基于官方 OpenWrt 源码修改发布的类原生固件
 
-    源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。  
+    源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件。  
+    固件介绍详见各固件仓库主页的 README 和 Releases。  
+    有特殊需求请自行编译，不提供技术支持！建议采用已有固件，自行甄选使用。  
     
-    __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。  
+    __注意：__    
     
-    有任何奇怪问题 SquashFS 可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。  
+      __部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。__  
+      
+      __固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。__  
+    
+      __有任何奇怪问题 SquashFS 版固件可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。__  
       
     QiuSimons（404 大佬）  
     地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
@@ -263,16 +277,15 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   
   已不推荐使用，内容已转移，[点击查看](https://github.com/nicksun98/R2S-Wiki/blob/master/friendlywrt.md)  
  
-
 ---  
 * __4.3 Armbian 固件__  
   
-    地址：[Armbian/nanopi-r2s](https://www.armbian.com/nanopi-r2s/)  
+  地址：[Armbian/nanopi-r2s](https://www.armbian.com/nanopi-r2s/)  
 
 ---  
 * __4.4 Linux 发行版固件__  
 
-  * 等待 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 补充，敬请期待！  
+  等待 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 补充，敬请期待！  
 
 ---  
 * __4.5 在线刷机__  
@@ -287,7 +300,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     通过 SSH 逐步运行下方的代码，将 <openwrt.img> 替换为您上传的固件名称（注意，不要加尖括号）。  
     ```  
     dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
-    reboot
+    reboot now
     ```  
   * 4.5.2 OpenWrt 到 OpenWrt  
 
@@ -297,11 +310,11 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     通过 SSH 逐步运行下方的代码，将 <openwrt.img.gz> 替换为您上传的固件名称（注意，不要加尖括号）。  
     ```  
     sysupgrade -v /tmp/<openwrt.img.gz>
-    reboot
+    reboot now
     ```  
     等待重启后，重连 SSH，输入：  
     ```  
-    firstboot -y && reboot
+    firstboot -y && reboot now
     ```  
 
     也可以通过 LuCI 的方式进行更新：  
@@ -312,7 +325,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
       等待重启后，重连 SSH，输入：  
       ```  
-      firstboot -y && reboot
+      firstboot -y && reboot now
       ```  
 
 ---  

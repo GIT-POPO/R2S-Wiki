@@ -1,7 +1,7 @@
 ## NanoPi-R2S 操作手册  
 
 欢迎查看 NanoPi-R2S 操作手册。本页旨在为 [NanoPi R2S Club](https://t.me/nanopir2sshell) ，收集与解答 NanoPi-R2S 相关问题。  
-如有更好的意见与建议，随时欢迎PR。  
+如有更好的意见与建议，随时欢迎 PR。  
 或者群内相关发言时直接 @popo  
 
 ### 1、R2S 基本介绍  
@@ -13,19 +13,19 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 * __1.1 开发板参数介绍__  
 
   > Soc: Rockchip RK3328, Quad-core Cortex-A53  
-  > DDR4 内存: 1GB  
+  > DDR4 内存：1 GB  
   > 网口：  
-  > RTL8211E（10 / 100 / 1000M 以太网口 x 1）  
-  > RTL8153B（USB 3.0 转 10 / 100 / 1000M 以太网口 x 1）  
-  > USB 2.0 接口: USB Type-A x1  
+  > RTL8211E（10 / 100 / 1000 Mbps 以太网口 x 1）  
+  > RTL8153B（USB 3.0 转 10 / 100 / 1000 Mbps 以太网口 x 1）  
+  > USB 2.0 接口：USB Type-A x1  
   > TF 卡槽 x 1  
   > MicroUSB: 供电和 Slave 功能  
-  > Debug Serial Port: 3.3V TTL 电平，3Pin 2.54mm 间距排针  
-  > LED 灯: LED x 3  
-  > 按键: Reset 按键 x 1（可用户自定义功能）  
-  > 开发板尺寸: 55.6 x 52mm  
-  > 供电: 直流 5V / 2A  
-  > 使用温度: 0℃ 到 80℃  
+  > Debug Serial Port: 3.3V TTL 电平，3 Pin 2.54 mm 间距排针  
+  > LED x 3  
+  > 按键：Reset 按键 x 1（可用户自定义功能）  
+  > 开发板尺寸：55.6 x 52 mm  
+  > 供电：直流 5V / 2A  
+  > 使用温度：0℃ 到 80℃  
 
   > [友善官方详细介绍](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)  
 
@@ -37,7 +37,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
   * Reset 按键目前未定义。  
   *<注意！7 月 17 日后类原生固件，SYS 灯引导时闪烁，启动后常亮和 LAN 口网口灯不亮是正常现象，等待上游更新。>*  
-  *<7月22日后加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反。>*  
+  *<7 月 22 日后加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反。>*  
+  *<7 月 28 日后官方正式编写代码支持 LAN 口电平灯显示，状态和 WAN 相同（接入后绿灯常亮，传输数据时黄灯闪烁）。>*  
 
 ---  
 ### 2、R2S 所需配件  
@@ -55,7 +56,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 2.2.1 TF 卡推荐  
 
-    * 本群推荐使用 “朗科与京东联名的 Class10 / SDHC / A1 的 TF 卡”。  
+    * 本群推荐使用 “朗科与京东联名的 Class 10 / SDHC / A1 的 TF 卡”。  
     *<京东提供后续保修及换新服务>*  
 
     * 另外大佬推荐 “SanDisk Industrial 闪迪工业卡” 。MLC 颗粒，均衡磨损带来更长寿命，高至 85 度的工作温度，同样适合 R2S 的工作环境。  
@@ -64,8 +65,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 2.2.2 TF 卡刷写建议  
 
-    * 刷写软件建议使用 [win32diskimager](https://win32diskimager.download/) 和 [rufus](https://rufus.ie/)。  
-    * 我们建议在刷写原生固件前，进行覆盖格式化或进行快速格式化后填入 1GB 左右的大文件。  
+    * 刷写软件建议使用 [win32diskimager](https://win32diskimager.download) 和 [rufus](https://rufus.ie)。  
+    * 我们建议在刷写原生固件前，进行覆盖格式化或进行快速格式化后填入 1 GB 左右的大文件。  
     * 以及再刷写成功后进行 `firstboot -y && reboot now` 的操作。（仅支持 SquashFS）  
 
   * 2.2.3 TF 卡的其他常见问题  
@@ -145,7 +146,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       **Q: 群内外壳和友善外壳有什么区别？**  
       A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有 OLED 的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。  
       
-      其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
+      其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
 
   * 2.3.2 风扇外壳  
 
@@ -158,7 +159,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 ---  
 * __2.4 USB 网卡__  
 
-  * FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5GHz。强制频宽 40MHz，信道 40。重启后，可以跑到 100Mbps 左右。  
+  * FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5 GHz。强制频宽 40 MHz，信道 40。重启后，可以跑到 100 Mbps 左右。  
   * 原生 OpenWrt 可选用 MT7601 等网卡，具体参照固件支持。  
 
 ---  
@@ -166,7 +167,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   目前 OLED 屏幕分为 “0.96 寸狼牙山五壮士版”，和 “三代铝壳自带 0.91 寸屏幕”。  
 
-  “0.91寸屏幕” 可使用 natelol 大佬的 [luci-app-oled](https://github.com/NateLol/luci-app-oled) 来选择显示内容（部分固件有编译进）  
+  “0.91 寸屏幕” 可使用 natelol 大佬的 [luci-app-oled](https://github.com/NateLol/luci-app-oled) 来选择显示内容（部分固件有编译进）  
 
 ---  
 * __2.6 其他外设__  
@@ -206,24 +207,24 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 ---  
 * __3.4 暖手宝__  
 
-  *<皮一下很开心。————Nick Bot>*  
+  *<皮一下很开心。———— Nick Bot>*  
 
 ---  
 ### 4、R2S 主要固件介绍  
 
 * __4.1 原生 OpenWrt 固件__  
 
-  * 4.1.1 原生支持 OpenWrt 固件  
+  * 4.1.1 原生 OpenWrt 支持  
 
-    * 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org/) 官方和 [CTCGFW](https://github.com/project-openwrt) 项目组，以及世界各地为此努力的朋友们。  
+    * 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org) 官方、[Project OpenWrt](https://github.com/project-openwrt) 项目组、[Quintus Chu](https://t.me/quintuschu) 大佬，以及世界各地为此努力的朋友们。  
     
     源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
-  * 4.1.2 群友基于原生 OpenWrt 源码的修改版预编译固件
+  * 4.1.2 群友基于官方 OpenWrt 源码修改发布的类原生固件
 
     源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。  
     
-    __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1GHz 下都相同，不建议频率低于 800MHz，一切问题后果自负。  
+    __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。  
     
     有任何奇怪问题 SquashFS 可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。  
       
@@ -248,10 +249,10 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
       
     欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
       
-  * 4.1.3 基于 Jayanta525 patch 的原生固件尝试  
+  * 4.1.3 基于 Jayanta525 源码的类原生固件  
 
-    基于 [Jayanta525](https://github.com/jayanta525) 的 patch 编译，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度落后于 OpenWrt 官方以及群友版本。  
-    目前 Lean 的源库是基于此编译。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
+    使用 [Jayanta525/openwrt-nanopi-r2s](https://github.com/jayanta525/openwrt-nanopi-r2s) 的源码，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度较落后于 OpenWrt 官方以及群友发布的版本。  
+    目前 Lean 的仓库是使用的此源码。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
 
     Chuck  
     地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
@@ -265,10 +266,8 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
 ---  
 * __4.3 Armbian 固件__  
-
-  * 来自 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 的博客  
   
-    地址: [e.g.daryasyr.com](https://e.g.daryasyr.com)  
+    地址：[Armbian/nanopi-r2s](https://www.armbian.com/nanopi-r2s/)  
 
 ---  
 * __4.4 Linux 发行版固件__  
@@ -280,17 +279,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * NanoPi R2S 支持在线升级 / 降级 / 更改固件。  
 
-  * 4.5.1 FriendlyWrt 到 FriendlyWrt  
-
-    * 部分固件内置有 SongChenwen 大佬的 [luci-app-r2sflasher](https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher)，可实现图形化刷机。  
-
-    * 或者使用 Gary 大佬的在线刷机脚本：  
-    ```  
-    wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
-    ```  
-       *<脚本 3 4 选项的 ardanzhu 固件链接已失效>*  
-
-  * 4.5.2 FriendlyWrt 到 OpenWrt  
+  * 4.5.1 FriendlyWrt 到 OpenWrt  
 
     建议使用 dd 命令进行写盘：  
 
@@ -300,9 +289,9 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
     dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
     reboot
     ```  
-  * 4.5.3 OpenWrt 到 OpenWrt  
+  * 4.5.2 OpenWrt 到 OpenWrt  
 
-    也可以使用 dd 命令，不过建议使用内置的 sysupgrade 命令：  
+    可使用 4.5.1 所述的 `dd` 命令，但建议使用内置的 `sysupgrade` 命令：  
 
     确保固件是 .img.gz 格式，通过 `scp` 命令上传到 /tmp 文件夹。  
     通过 SSH 逐步运行下方的代码，将 <openwrt.img.gz> 替换为您上传的固件名称（注意，不要加尖括号）。  
@@ -335,7 +324,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   **Q: 固件开启 BBR 加速了吗？**  
   A: 原生固件默认打开 BBR 加速，友善固件在“网络 - Turbo ACC 加速”打开。5.4 内核的 BBR 已修复万兆掉速 BUG。  
 
-  **Q: Flow 加速 / 软件流量分载 / Shortcut-FE 加速要开吗？**  
+  **Q: Flow 加速（软件流量分载）/ Shortcut-FE 加速要开吗？**  
   A: Flow Offloading / Shortcut-FE 等建议带宽超过 500Mbps 的用户打开。请勿同时开启，切换使用时建议重启以避免不必要的问题。  
 
   **Q: HWNAT / 硬件流量分载要开吗？**  
@@ -374,7 +363,7 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
    
     * 更改 LAN IP（注意，不要加尖括号）
     ```
-    uci set network.lan.ipaddr=<新的 LAN 地址>
+    uci set network.lan.ipaddr=<新的 LAN IP>
     uci commit network
     /etc/init.d/network restart
     ```

@@ -224,17 +224,21 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
 
   * 4.1.1 原生 OpenWrt 支持  
 
-    * 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org) 官方、[Project OpenWrt](https://github.com/project-openwrt) 项目组、[Quintus Chu](https://t.me/quintuschu) 大佬，以及世界各地为此努力的朋友们。  
+    2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的支持，取得了阶段性胜利。感谢为此付出努力的群友们，感谢 [OpenWrt](https://openwrt.org) 官方、[Project OpenWrt](https://github.com/project-openwrt) 项目组、[Quintus Chu](https://t.me/quintuschu) 大佬，以及世界各地为此努力的朋友们。  
     
-      源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
+    源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
   * 4.1.2 群友基于官方 OpenWrt 源码修改发布的类原生固件
 
-    源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。  
+    源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件， __固件介绍详见各固件仓库主页的 README 和 Releases。有特殊需求请自行编译，不提供技术支持__ ，建议采用已有固件，自行甄选使用。
     
-    __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。  
+    __特别注意：__    
+      
+      __固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。__  
     
-    有任何奇怪问题 SquashFS 可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。  
+      __部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。__ 
+    
+      __有任何奇怪问题 SquashFS 可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。__  
       
     QiuSimons（404 大佬）  
     地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  

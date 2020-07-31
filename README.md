@@ -249,50 +249,40 @@
 
 ##### 4.1.1 OpenWrt 官方主线支持 R2S
 
-源于开源社区的努力，使用 OpenWrt 官方源码编译，大部分为自用固件。  
-固件介绍详见各固件仓库主页的 README 和 Releases。  
-__有特殊需求请自行编译，不提供技术支持。__ 建议采用已有固件，自行甄选使用。  
-    
-__注意：__    
-    
-__部分超频固件保持 1.45V 电压超频至 1608 MHz，在发热不变的同时获得更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。__  
-      
-__固件分为 EXT4 版和 SquashFS 版，除了启动 SquashFS 的固件一直失败，没有其他解决方案时，才建议使用 EXT4 固件。EXT4 固件不能使用 `firstboot` 等命令，误操作后无法重置系统，下列类原生固件均提供 SquashFS 镜像。__  
-    
-__有任何奇怪问题 SquashFS 版固件可执行重置，部分固件带了 `fuck` 组件，使用更佳。依然不建议使用备份和升级保留备份。__  
-      
-QiuSimons（404 大佬）  
-地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
-      
-Quintus Chu（502 大佬）  
-地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
-      
-CN_SZTL（高大全版）  
-地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
-*<包含 18.06 版本>*  
-      
-Kane Green  
-地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
-      
-Nick Bot  
-地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
-      
-墨子冥  
-地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
-      
-欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
-      
-  * 4.1.3 基于 Jayanta525 源码的类原生固件  
+* 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的正式支持，使用 longterm kernel 5.4 内核。感谢为此付出努力的一众网友，感谢 [OpenWrt](https://openwrt.org/) 官方和 [CTCGFW](https://github.com/project-openwrt) 项目组，感谢世界各地为开源社区努力贡献的朋友们。  
 
-    使用 [Jayanta525/openwrt-nanopi-r2s](https://github.com/jayanta525/openwrt-nanopi-r2s) 的源码，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度较落后于 OpenWrt 官方以及群友发布的版本。  
-    目前 Lean 的仓库是使用的此源码。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
+  源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
-    Chuck  
-    地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
-    *<注意 Branch>*  
-    
----  
-* __4.2 FriendlyWrt 固件__  
+##### 4.1.2 R2S Club 群友基于原生 OpenWrt 源码的固件
+
+  源于开源社区的努力，使用 OpenWrt 官方源码，各路大佬按自身所需定制编译。 __有特殊需求者请自行编译，不提供任何免费技术支持__ ，现成固件请自行甄选使用。OpenWrt 固件分为 ext4 格式版本及 SquashFS 格式版本，若使用 TLC 类型 TF 卡写入 SquashFS 格式的固件启动失败，才建议换用 ext4 格式固件。SquashFS 格式固件可在误配置等情况下使用恢复固件初始设置重置系统（使用 luci 管理页面相关菜单或使用 `firstboot` 等命令），ext4 格式则不具备此功能。下列基于原生 OpenWrt 源码编译固件均提供 SquashFS 格式，部分提供 ext4 格式。  
+
+  __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1GHz 下都相同，不建议频率低于 800MHz，一切问题后果自负。若出现反复重启不能稳定，说明 Soc 体质偏差，建议放弃超频。  
+
+  设置错误或误操作后，SquashFS 可执行重置，部分固件带了 `fuck` 组件清除残留设置，使用更佳。使用备份和升级保留备份前请确保清楚了解所做的操作。  
+
+* QiuSimons（404 大佬）  
+  地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
+
+* Quintus Chu（502 大佬）  
+  地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
+
+* CN_SZTL（高大全版）  
+  地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
+  *<包含 18.06 版本>*  
+
+* Kane Green  
+  地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
+
+* Nick Bot  
+  地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
+
+* 墨子冥  
+  地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
+
+* Chuck  
+  地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
+  *<注意 Branch>*  
   
 ##### 4.1.3 基于 Jayanta525 源码的类原生固件
 

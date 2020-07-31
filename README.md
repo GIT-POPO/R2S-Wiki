@@ -1,16 +1,16 @@
-## NanoPi-R2S 操作手册  
+## NanoPi-R2S 操作手册
 
-欢迎查看 NanoPi-R2S 操作手册。本页旨在为 [NanoPi R2S Club](https://t.me/nanopir2sshell) ，收集与解答 NanoPi-R2S 相关问题。  
-如有更好的意见与建议，随时欢迎PR。  
-或者群内相关发言时直接 @popo  
+  欢迎查看 NanoPi-R2S 操作手册。本页旨在为 [NanoPi R2S Club](https://t.me/nanopir2sshell) ，收集与解答 NanoPi-R2S 相关问题。  
+  如有更好的意见与建议，随时欢迎 PR。  
+  或者群内相关发言时直接 @popo  
 
-### 1、R2S 基本介绍  
+### 1、R2S 基本介绍
 
-NanoPi R2S 是友善电子团队最新推出的一款实现满速率双千兆的、完全开源的 IoT 应用神器。  
+  [NanoPi R2S](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh) 是友善电子团队最新推出的一款实现满速率双千兆的、完全开源的 IoT 应用神器。  
 
-NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 Docker CE, 完全开源，用于企业物联网二次开发，个人定制 NAS，家庭物联网网关等。  
+  NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 Docker CE, 完全开源，用于企业物联网二次开发，个人定制 NAS，家庭物联网网关等。  
 
-#### 1.1 开发板参数介绍__
+#### 1.1 开发板参数介绍
 
 <details>
   <summary>点击展开查看详细内容</summary>
@@ -29,66 +29,78 @@ NanoPi R2S 使用 RK3328 Soc，有两个千兆网络，1G DDR4 内存，支持 D
   > 开发板尺寸: 55.6 x 52mm  
   > 供电: 直流 5V / 2A  
   > 使用温度: 0℃ 到 80℃  
-  > [友善官方详细介绍](https://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)  
   </pre>
-  </details>
-
+</details>
 
 ---
 
 #### 1.2 灯光按键介绍
 
-  * 灯光前面板由 WAN LAN 绿色指示灯 和 SYS 红色指示灯 组成。
-  * 7月28日OpenWrt主线正式支持R2S后，各个指示灯已基本正常。
-  * 部分时期的固件下，WAN LAN 指示灯下可能不亮，SYS 指示灯在开机状态时，是红色双闪状态。
-  * 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者 TF卡 不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
-  * 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。  
-  * Reset 按键目前未定义。  
-    *<注意！7 月 17 日后类原生固件，SYS 灯引导时闪烁，启动后常亮和 LAN 口网口灯不亮是正常现象，等待上游更新。>*  
-      *<7月22日后加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反。>*  
+* 灯光前面板由 WAN LAN 绿色指示灯 和 SYS 红色指示灯 组成，WAN LAN 指示灯在部分固件下不能亮起，SYS 指示灯在开机状态时，是红色双闪状态。  
+
+* 如果遇到红灯常亮等特殊状态，则说明系统未启动，或者 TF卡 不兼容等状态。插入网线连接其他设备后，网口高低电平灯闪烁，则说明链路状态正常。  
+
+* 若开机后网口灯不正常，或者熄灭，则说明系统未启动或遇到错误。    
+
+* 类原生固件灯光说明：  
+    
+  > 7 月 17 日后，SYS 灯引导时闪烁，启动后常亮和 LAN 口网口灯不亮是正常现象。  
+  > 7 月 22 日后，加入新 Patch 解决 LAN 口网口灯不亮的问题。电平灯和 WAN 相反（接入后黄灯常亮，传输数据时绿灯闪烁）。  
+  > 7 月 28 日后，官方正式编写代码支持 LAN 口电平灯显示，状态和 WAN 相同（接入后绿灯常亮，传输数据时黄灯闪烁）。  
+  > 至此，一切灯光正常。   
 
 ---
 
-### 2、R2S 所需配件  
+### 2、R2S 所需配件
 
 #### 2.1 电源线和电源的选择
 
-  R2S 推荐使用 5V 2A 的 USB 电源，stress 烤机下满载电流 0.8A。  
-  建议使用质量可靠的USB线缆USB-A或USB-C 至 MicroUSB。
-  *<注意请慎用QC类的充电头供电，以免电压识别有误供电电压过高损坏设备>*  
+  R2S 推荐使用 5V/2A 的 USB 电源，stress 烤机下满载电流 0.8A。  
+
+  建议使用质量可靠的 USB 线缆 USB-A 或USB-C 至 MicroUSB。  
+
+  *<注意请慎用 QC 类的充电头供电，以免电压识别有误供电电压过高损坏设备>*  
 
 ---
 
-#### 2.2 TF储存卡的选择及相关问题
+#### 2.2 TF 储存卡的选择及相关问题
 
-R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳定性决定着固件刷写的成功与否，以及后续使用更新固件的稳定性。  
+  NanoPi R2S 没有内置储存器，使用外置插入式 TF 卡。TF 卡的兼容性和稳定性决定着固件刷写的成功与否，以及后续使用更新固件的稳定性。  
 
-##### 2.2.1 TF卡推荐
+##### 2.2.1 TF 卡推荐
 
-- 本群推荐使用 “朗科与京东联名的 Class10 / SDHC / A1 的 TF 卡”<主要是便宜、能用、且拥有京东提供后续保修及换新服务>。
-- 某宝等渠道的 “SanDisk Industrial 闪迪工业卡” 。从网友的反馈来看属MLC类型TF卡，且没TLC的擦写缺陷，适合频繁刷机。相比TLC拥有更长使用寿命，以及高至 85 度的工作温度。但渠道来源存在风险，请自行判断。
-- 另外可选用 TF转eMMC 的特殊 TF 卡，使用上稳定性最佳，但会破坏整体外观。详讯群内 Darya。（适合刷写各种系统固件测试等频繁读写使用)
+* 本群推荐使用 “朗科与京东联名的 Class10 / SDHC / A1 的 TF 卡”  
+  *<主要是便宜、能用、且拥有京东提供后续保修及换新服务>*  
 
-##### 2.2.2 TF卡刷写固件
+* 某宝等渠道的 “SanDisk Industrial 闪迪工业卡” 。从网友的反馈来看属 MLC 类型 TF 卡，且没 TLC 的擦写缺陷，适合频繁刷机。相比 TLC 拥有更长使用寿命，以及高至 85 度的工作温度。但渠道来源存在风险，请自行判断。  
 
-- 写卡软件：windows下建议使用 [win32diskimager](https://win32diskimager.download/) 和 [rufus](https://rufus.ie/)。
-- macos建议使用balenaEtcher（macos也可直接在命令行下用dd写入）
-- 普通市售TLC类型的TF卡，由于可能存在"擦除缺陷"，建议在刷写固件前，尽量做覆盖填充，可选择完全格式化或进行快速格式化后填入一些大文件。
-- 如选用squashfs格式固件，建议刷写成功后ssh登入运行命令 `firstboot -y && reboot now` 完全清理。  
+* 另外可选用 TF 转 eMMC 的特殊 TF 卡，使用上稳定性最佳，但会破坏整体外观。详讯群内 Darya（适合刷写各种系统固件测试等频繁读写使用)。  
 
-##### 2.2.3 TF 卡的其他常见问题  
+##### 2.2.2 TF 卡刷写固件
 
-- Q: 为什么启动不了系统？
-  A: 首先根据上文确定是不是设置错误。比如 LAN WAN 互换，比如未自动获取 IP 地址。建议根据 2.2.2 的教程重新刷写TF卡。
-    *<另外部分 TF 卡不兼容 R2S，常见能使用兼容 ext4格式固件而不能使用squashfs格式固件启动>*  
+* 写卡软件：  
 
-- Q: 为什么 TF 卡读取不了/卡容量减少/刷卡掉速?
+  >Windows 下建议使用 [win32diskimager](https://win32diskimager.download/) 和 [rufus](https://rufus.ie/)。  
+  >
+  >macOS 建议使用 [balenaEtcher](https://www.balena.io/etcher/)（macOS 和 Linux 也可直接在命令行下用 dd 写入）  
+
+* 普通市售 TLC 类型的 TF 卡，由于可能存在"擦除缺陷"，建议在刷写固件前，尽量做覆盖填充，可选择完全格式化或进行快速格式化后填入一些大文件。  
+
+* 如选用 SquashFS 格式固件，建议刷写成功后 SSH 登入运行命令 `firstboot -y && reboot now` 完全清理。  
+
+##### 2.2.3 TF 卡的其他常见问题
+
+* Q: 为什么启动不了系统？  
+  A: 首先根据上文确定是不是设置错误。比如 LAN WAN 互换，比如未自动获取 IP 地址。建议根据 2.2.2 的教程重新刷写TF卡。  
+    *<另外部分 TF 卡不兼容 R2S，常见能使用兼容 ext4 格式固件而不能使用 SquashFS 格式固件启动>*  
+
+* Q: 为什么 TF 卡读取不了/卡容量减少/刷卡掉速？  
   A: 建议使用专业软件删除分区，重新格式化 TF 卡。或更换读卡器。出现严重问题联系销售商换新。  
 
-- Q: 刷了 SquashFS 的系统为什么原来的配置还在？
-  A: 因为TLC类型TF卡的特性，squashfs格式的系统存在的Upper Layer可能没有被擦除。特别是同系列的固件 RootFS 大小相同时会出现此类状况。 [详情链接](https://openwrt.org/docs/guide-user/troubleshooting/failsafe_and_factory_reset)
-  解决方案：使用 SSH 等工具进 入R2S 输入：  
+* Q: 刷了 SquashFS 的系统为什么原来的配置还在？  
+  A: 因为 TLC 类型 TF 卡的特性，SquashFS 格式的系统存在的 Upper Layer 可能没有被擦除。特别是同系列的固件 RootFS 大小相同时会出现此类状况。[详情链接](https://openwrt.org/docs/guide-user/troubleshooting/failsafe_and_factory_reset)  
 
+  解决方案：使用 SSH 等工具进 入R2S 输入：  
   ```  
   jffs2reset -y && reboot now
   ```
@@ -97,17 +109,16 @@ R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳�
 
 ---
 
- #### 2.3 散热选择
+#### 2.3 散热选择
 
-  RK3328 是4核A53，在日常使用中，发热量偏大。需要散热来保证不会达到温度墙而掉频。  
-  RK3328 的温度墙是 85℃  
-  本节主要介绍由R2S群组发起打造的被动散热铝合金外壳，以及友善厂家前后推出的外壳及其它散热措施。
+* RK3328 是4核A53，在日常使用中，发热量偏大。需要散热来保证不会达到温度墙而掉频。RK3328 的温度墙是 85℃。  
+* 本节主要介绍由R2S群组发起打造的被动散热铝合金外壳，以及友善厂家前后推出的外壳及其它散热措施。  
 
-  ##### 2.3.1 铝合金外壳  
+##### 2.3.1 铝合金外壳  
 
-  所有铝合金外壳皆出自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。  
-  感谢群友们为 NanoPi R2S 所做的贡献。  
+  所有铝合金外壳皆出自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。感谢群友们为 NanoPi R2S 所做的贡献。  
   友善厂家现推出外壳发售，神似R2S Club群组的第一代外壳。  
+  
   __购买外壳可加入 Telegram 群咨询 [NanoPi R2S Club](https://t.me/nanopir2sshell)，看群置顶。或 [淘宝链接](https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1613492699&activityId=156945e116dc477780f99dedf3ed91b3)，领券下单更优惠。__
 
 * 2.3.1.1 铝合金外壳区别  
@@ -137,42 +148,45 @@ R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳�
 
 * 2.3.1.4 常见问题  
 
-  **Q: 铝合金外壳能降低到多少度？**  
-  A: 这个要根据室温和空气流通速度来决定。铝合金外壳的最主要目的是满负载情况下能不碰温度墙，稳定 1608MHz 的 Soc 主频不掉频，全力输出。以以往的经验来说，待机状态下 Soc 温度是室温 +20℃ 以内，弱电箱内 +25℃ 以内。如果温度过高应检查安装问题特别是散热柱与CPU是否紧密接触，应使用散热硅脂等确保有良好接触面导热。  
+  * Q: 铝合金外壳能降低到多少度？  
+    A: 这个要根据室温和空气流通速度来决定。铝合金外壳的最主要目的是满负载情况下能不碰温度墙，稳定 1608MHz 的 Soc 主频不掉频，全力输出。以以往的经验来说，待机状态下 Soc 温度是室温 +20℃ 以内，弱电箱内 +25℃ 以内。如果温度过高应检查安装问题特别是散热柱与 CPU 是否紧密接触，应使用散热硅脂等确保有良好接触面导热。  
 
-  **Q: 绝缘胶带需要贴吗？**  
-  A: 可贴可不贴。 尽量注意做好绝缘保护，否则会因短路引起关机保护。
+  * Q: 绝缘胶带需要贴吗？  
+    A: 可贴可不贴。 尽量注意做好绝缘保护，否则会因短路引起关机保护。  
 
-  **Q: 硅脂溢出到主板上怎么办？**  
-  A: 大部分硅脂不导电，没影响。  
+  * Q: 硅脂溢出到主板上怎么办？  
+    A: 大部分硅脂不导电，没影响。  
 
-  **Q: 板子安装不进去怎么办？**  
-  A: R2S的主板制造过程是从整块大主板上裁切，会有一定的公差。用指甲刀锉一下边缘毛边。  
+  * Q: 板子安装不进去怎么办？  
+    A: R2S的主板制造过程是从整块大主板上裁切，会有一定的公差。用指甲刀锉一下边缘毛边。  
 
-  **Q: 硅脂垫是干什么的？可以不用吗？**  
-  A: 硅脂垫是贴主板后侧到铝壳底盖的，主要充当散热器弹簧的用途，给Soc和铝柱一个额外的压力，帮助更好散热。  
+  * Q: 硅脂垫是干什么的？可以不用吗？  
+    A: 硅脂垫是贴主板后侧到铝壳底盖的，主要充当散热器弹簧的用途，给 Soc 和铝柱一个额外的压力，帮助更好散热。  
 
-  **Q: 群内外壳和友善外壳有什么区别？**  
-  A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有 OLED 的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。  
+  * Q: 群内外壳和友善外壳有什么区别？  
+    A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有 OLED 的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。
+  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
 
- ##### 2.3.2 风扇外壳  
+##### 2.3.2 风扇外壳
 
-无论是网售亚克力定制的外壳还是原装风扇散热片（裸奔情况下）或其它自制的主动风扇散热方案，都可以显著降低待机温度，满足日常使用。但在极端满载情况下，还是会撞温度墙。如有极端需求还需暴力改造。 主动散热风扇也是故障点，注意维护使用。
+  无论是网售亚克力定制的外壳还是原装风扇散热片（裸奔情况下）或其它自制的主动风扇散热方案，都可以显著降低待机温度，满足日常使用。但在极端满载情况下，还是会撞温度墙。如有极端需求还需暴力改造。 主动散热风扇也是故障点，注意维护使用。
 
- ##### 2.3.3 其他被动散热  
+##### 2.3.3 其他被动散热
 
-无论是原装散热片还是加装其他散热片，只要满足不装外壳，存放于空气强流通处，都能显著降低待机温度。  
+  无论是原装散热片还是加装其他散热片，只要满足不装外壳，存放于空气强流通处，都能显著降低待机温度。  
 
 ---
 
 #### 2.4 USB 网卡
 
-  * kernel 5.4对大多数无线网卡的驱动支持都不好，暂无任何值得推荐使用的型号。
-  * 旧的FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5GHz。强制频宽 40MHz，信道 40。重启后，可以跑到 100Mbps 左右。  
-  * 原生 OpenWrt 可选用 MT7601 等网卡，具体参照固件支持。 
-  * OpenWrt支持USB的4G上网卡，具体请参考有编译支持的固件说明（目前主要支持Hilink模式）。
+> kernel 5.4 对大多数无线网卡的驱动支持都不好，暂无任何值得推荐使用的型号。  
+> 
+> 旧的FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5GHz。强制频宽 40MHz，信道 40。重启后，可以跑到 100Mbps 左右。  
+> 
+> 原生 OpenWrt 可选用 MT7601 等网卡，具体参照固件支持。  
+>
+> OpenWrt支持USB的4G上网卡，具体请参考有编译支持的固件说明（目前主要支持Hilink模式）。  
 
 ---
 
@@ -180,7 +194,7 @@ R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳�
 
   目前 OLED 屏幕分为 “0.96 寸狼牙山五壮士版”，和 “三代铝壳自带 0.91 寸屏幕”。  
 
-  “0.91寸屏幕” 可使用 natelol 大佬的 [luci-app-oled](https://github.com/NateLol/luci-app-oled) 来选择显示内容（部分固件编译内置）  
+  “ 0.91 寸屏幕 ” 可使用 NateLol 大佬的 [luci-app-oled](https://github.com/NateLol/luci-app-oled) 来选择显示内容（部分固件编译内置）。  
 
 ---
 
@@ -194,19 +208,19 @@ R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳�
 
 #### 3.1 路由器
 
-  超小体积的双千兆网口的ARM四核A53开发板，非常适合做软路由路。  
+  超小体积的双千兆网口的 ARM 四核 A53 开发板，非常适合做软路由路。  
 
-  * 3.1.1 主路由  
+##### 3.1.1 主路由  
 
-    双网口分别用于LAN、WAN，结构简单，推荐大多数场合使用。 R2S Club群组测试双网口NAT转发性能940Mpbs，已跑满千兆网口。 
+  双网口分别用于LAN、WAN，结构简单，推荐大多数场合使用。 R2S Club 群组测试双网口NAT转发性能 940Mpbs，已跑满千兆网口。 
 
-  * 3.1.2 单臂路由  
+##### 3.1.2 单臂路由  
 
-    单网口接 VLAN 交换机，使用VLAN区分LAN、WAN，单线复用。参考 IEEE 802.1q 协议等资料。 （简单PPPoE WAN也可不用VLAN隔离，单网口既做LAN又兼承载PPPoE） 
+  单网口接 VLAN 交换机，使用 VLAN 区分 LAN、WAN，单线复用。参考 IEEE 802.1q 协议等资料。 （简单 PPPoE-WAN 也可不用 VLAN 隔离，单网口既做 LAN 又兼承载 PPPoE） 
 
-  * 3.1.3 “旁路由”  
+##### 3.1.3 “旁路由”  
 
-    极不推荐。  
+  极不推荐。  
 
 ---
 
@@ -229,53 +243,52 @@ R2S没有内置储存器，使用外置插入式TF卡。TF卡的兼容性和稳�
 
 ---
 
-### 4、R2S 主要固件介绍  
+### 4、R2S 主要固件介绍
 
 #### 4.1 原生 OpenWrt 固件
 
- ##### 4.1.1 OpenWrt官方主线支持R2S  
+##### 4.1.1 OpenWrt 官方主线支持 R2S
 
-* 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的正式支持，使用longterm kernel 5.4内核。感谢为此付出努力的一众网友，感谢 [OpenWrt](https://openwrt.org/) 官方和 [CTCGFW](https://github.com/project-openwrt) 项目组，感谢世界各地为开源社区努力贡献的朋友们。  
+* 2020 年 7 月 28 日，OpenWrt 官方主线加入了对 NanoPi R2S 的正式支持，使用 longterm kernel 5.4 内核。感谢为此付出努力的一众网友，感谢 [OpenWrt](https://openwrt.org/) 官方和 [CTCGFW](https://github.com/project-openwrt) 项目组，感谢世界各地为开源社区努力贡献的朋友们。  
 
-源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
+  源码地址：[openwrt/openwrt](https://github.com/openwrt/openwrt)  
 
- ##### 4.1.2 R2S Club群友基于原生 OpenWrt 源码的固件
+##### 4.1.2 R2S Club 群友基于原生 OpenWrt 源码的固件
 
-源于开源社区的努力，使用 OpenWrt 官方源码，各路大佬按自身所需定制编译。 __有特殊需求者请自行编译，不提供任何免费技术支持__ ，现成固件请自行甄选使用。OpenWrt固件分为 ext4格式版本及squashfs格式版本，若使用TLC类型TF卡写入squashfs格式的固件启动失败，才建议换用ext4格式固件。squashfs格式固件可在误配置等情况下使用恢复固件初始设置重置系统（使用luci管理页面相关菜单或使用 `firstboot` 等命令），ext4格式则不具备此功能。下列基于原生OpenWrt源码编译固件均提供squashfs格式，部分提供ext4格式。  
+  源于开源社区的努力，使用 OpenWrt 官方源码，各路大佬按自身所需定制编译。 __有特殊需求者请自行编译，不提供任何免费技术支持__ ，现成固件请自行甄选使用。OpenWrt 固件分为 ext4 格式版本及 SquashFS 格式版本，若使用 TLC 类型 TF 卡写入 SquashFS 格式的固件启动失败，才建议换用 ext4 格式固件。SquashFS 格式固件可在误配置等情况下使用恢复固件初始设置重置系统（使用 luci 管理页面相关菜单或使用 `firstboot` 等命令），ext4 格式则不具备此功能。下列基于原生 OpenWrt 源码编译固件均提供 SquashFS 格式，部分提供 ext4 格式。  
 
-__固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1GHz 下都相同，不建议频率低于 800MHz，一切问题后果自负。  
+  __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1GHz 下都相同，不建议频率低于 800MHz，一切问题后果自负。若出现反复重启不能稳定，说明 Soc 体质偏差，建议放弃超频。  
 
-设置错误或误操作后，SquashFS 可执行重置，部分固件带了 `fuck` 组件清除残留设置，使用更佳。使用备份和升级保留备份前请确保清楚了解所做的操作。  
+  设置错误或误操作后，SquashFS 可执行重置，部分固件带了 `fuck` 组件清除残留设置，使用更佳。使用备份和升级保留备份前请确保清楚了解所做的操作。  
 
-QiuSimons（404 大佬）  
-地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
+* QiuSimons（404 大佬）  
+  地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  
 
-Quintus Chu（502 大佬）  
-地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
+* Quintus Chu（502 大佬）  
+  地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
 
-CN_SZTL（高大全版）  
-地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
-*<包含 18.06 版本>*  
+* CN_SZTL（高大全版）  
+  地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
+  *<包含 18.06 版本>*  
 
-Kane Green  
-地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
+* Kane Green  
+  地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
 
-Nick Bot  
-地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
+* Nick Bot  
+  地址：[nicksun98/R2S-OpenWrt](https://github.com/nicksun98/R2S-OpenWrt)  
 
-墨子冥  
-地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
+* 墨子冥  
+  地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
 
-欢迎各位大佬提供自己的固件地址。谢谢大家为开源社区做出的努力和贡献。  
+* Chuck  
+  地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
+  *<注意 Branch>*  
+  
+##### 4.1.3 基于 Jayanta525 源码的类原生固件
 
-  ##### 4.1.3 基于 Jayanta525 patch 的原生固件尝试   
+  使用 [Jayanta525/openwrt-nanopi-r2s](https://github.com/jayanta525/openwrt-nanopi-r2s) 的源码，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度较落后于 OpenWrt 官方以及群友发布的版本。  
 
-基于 [Jayanta525](https://github.com/jayanta525) 的 patch 编译，是原生支持前的重要阶段。但是有未改好 IRQ 等等问题，使用舒适度和性能完整度落后于 OpenWrt 官方以及群友版本。  
-目前 Lean 的源库是基于此编译。Chuck 采用友善 IRQ 修改版的固件是少数做好优化的固件。  
-
-Chuck  
-地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
-*<注意 Branch>*  
+  “这个家伙很懒，什么都没有留下。”  
 
 ---
 
@@ -287,187 +300,184 @@ Chuck
 
 #### 4.3 Armbian 固件
 
-  #### 来自 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 的博客  
+* 地址：[Armbian/nanopi-r2s](https://www.armbian.com/nanopi-r2s/)  
 
-地址: [e.g.daryasyr.com](https://e.g.daryasyr.com)  
+* 教程来自 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 的博客：  
+
+  > 地址: [e.g.daryasyr.com](https://e.g.daryasyr.com)  
 
 ---
 
 #### 4.4 其它Linux 发行版固件
 
-  * 等待 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 补充，敬请期待！  
+* 等待 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 补充，敬请期待！  
 
 ---
 
-#### 4.5 NanoPi R2S 支持在线升级 / 降级 / 更改固件。  
+#### 4.5 NanoPi R2S 支持在线升级 / 降级 / 更改固件。
 
-  ##### 4.5.1 使用LuCI网页管理界面的"备份/升级"功能更新固件：  
+##### 4.5.1 使用 LuCI 网页管理界面的"备份/升级"功能更新固件
 
-  Luci管理页面，进入"系统-备份/升级"，选择刷写新的固件，上传要刷写的固件应是 *.img.gz 或 *.img格式。  
+  Luci管理页面，进入"系统-备份/升级"，选择刷写新的固件，上传要刷写的固件应是 .img.gz 或 .img格式。  
+
   请自行核对 MD5 值和 SHA256 值确保文件一致性，选择"刷写固件"，R2S 会更新系统并且会自行重启。  
-  *（注意！如果是使用squashfs格式的固件，由于TLC类型TF卡的擦写缺陷，即使选择“不保存配置“仍然会保存配置，如果是ext4格式固件，或使用MLC TF卡及TF 卡转 emmc 的则除外）*  
 
+  *<注意！如果是使用 SquashFS格式的固件，由于 TLC 类型 TF 卡的擦写缺陷，即使选择“不保存配置“仍然会保存配置，如果是 ext4 格式固件，或使用 MLC TF 卡及 TF 卡转 emmc 的则除外>*  
+ 
   如果是使用普通市售TLC类型TF卡，建议升级完成重启后，使用SSH进一步清除旧配置：  
 
   ```  
-  firstboot -y && reboot
+  firstboot -y && reboot now
   ```
 
-  *（注意！TLC类型TF卡，无论是使用读卡器写卡刷入固件还是在线更新固件，当使用squashfs格式固件时，如出现不能正常启动、或旧config没能清理导致无法正常运作。请反复尝试或写入其它大文件或换用ext4格式固件消除擦写缺陷）*  
+  *<注意！ TLC 类型 TF 卡，无论是使用读卡器写卡刷入固件还是在线更新固件，当使用 SquashFS 格式固件时，如出现不能正常启动、或旧 config 没能清理导致无法正常运作。请反复尝试或写入其它大文件或换用 ext4 格式固件消除擦写缺陷>*  
 
-  ##### 4.5.2 命令行下更新固件  
+##### 4.5.2 命令行下更新固件  
 
-前提：
+  前提：
 
-1. 熟悉简单ssh命令行操作
-2. 通过scp、sftp或"文件传输"(部分固件有编译此应用，管理页面"系统-文件传输"）等方式，把 *.img 或 *.img.gz 格式固件上传至R2S，例如放在/tmp目录下。
+> 1. 熟悉简单ssh命令行操作  
+>
+> 2. 通过 scp、sftp 或"文件传输"(部分固件有编译此应用，管理页面"系统-文件传输"）等方式，把 .img 或 .img.gz 格式固件上传至 R2S ，例如放在 /tmp 目录下。  
 
-直接使用 dd 命令把固件img全新写入TF卡更新系统，"/dev/mmcblk0"是R2S的TF卡设备位置，将 <openwrt.img.gz>替换成实际文件名（不包括<>括号）
+  直接使用 dd 命令把固件 img 全新写入TF卡更新系统， "/dev/mmcblk0" 是R2S的TF卡设备位置，将 <openwrt.img.gz> 替换成实际文件名（不包括 <> 括号）  
 
-```  
-dd if=/tmp/<openwrt.img> of=/dev/mmcblk0 conv=fsync
-reboot
-```
+  ```  
+  dd if=/tmp/<openwrt.img> of=/dev/mmcblk0 conv=fsync
+  reboot
+  ```
 
-使用内置的 sysupgrade 命令：  
+  使用内置的 sysupgrade 命令：  
 
-```  
-sysupgrade -v /tmp/<openwrt.img.gz>
-reboot
-```
+  ```  
+  sysupgrade -v /tmp/<openwrt.img.gz>
+  reboot
+  ```
 
-等待重启后，重连 SSH，输入：  
+  等待重启后，重连 SSH，输入：  
 
-```  
-firstboot -y && reboot
-```
+  ```  
+  firstboot -y && reboot now
+  ```
+  
+##### 4.5.3 从FriendlyWrt 升级到 OpenWrt
 
-  ##### 4.5.3 从FriendlyWrt 升级到 OpenWrt  
+  建议使用 dd 命令进行写盘，参考上一条 4.5.2  
 
-建议使用 dd 命令进行写盘，参考上一条  
-
-```  
-dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
-reboot
-```
-
- ##### 4.5.4 从FriendlyWrt 升级到 FriendlyWrt  
-
-* 部分固件内置有 SongChenwen 大佬的 [luci-app-r2sflasher](https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher)，可实现图形化刷机。  
-
-* 或者使用 Gary 大佬的在线刷机脚本：  
-
-```  
-wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
-```
-
-<脚本 3 4 选项的 ardanzhu 固件链接已失效> 
-故纸堆里的FriendlyWrt可全面放弃了，还是换到OpenWrt吧。
-
+  ```  
+  dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
+  reboot
+  ```
+  
 ---
 
 #### 4.6 常见问题
 
-  **Q: 开机后网口灯亮，分配不到 IP / 分配到 169.254.x.x？**  
+* Q: 开机后网口灯亮，分配不到 IP / 分配到 169.254.x.x ？  
   A: 确认您刷的固件插入正确的网口，如正确，手动分配子网内 IP，若可以进入后台，恢复到出厂设置（执行重置），进行干净部署。若未解决，进行换网口操作。  
 
-  **Q: 固件开启 BBR 加速了吗？**  
-  A: 原生固件默认打开 BBR 加速，部分固件编译带有Turbo ACC工具可检查，在“网络 - Turbo ACC 加速”。5.4 内核的 BBR 已修复万兆掉速 BUG。  
+* Q: 固件开启 BBR 加速了吗？  
+  A: 原生固件默认打开 BBR 加速，部分固件编译带有 Turbo ACC 工具可检查，在“网络 - Turbo ACC 加速”。5.4 内核的 BBR 已修复万兆掉速 BUG。  
 
-  **Q: Flow 加速 / 软件流量分载 / Shortcut-FE 加速要开吗？**  
+* Q: Flow 加速 / 软件流量分载 / Shortcut-FE 加速要开吗？  
   A: Flow Offloading / Shortcut-FE 等建议带宽超过 500Mbps 的用户打开。请勿同时开启，切换使用时建议重启以避免不必要的问题。 两者性能基本一致。 
 
-  **Q: HWNAT / 硬件流量分载要开吗？**  
-  A: OpenWrt的硬件流量分载仅支持 MTK762x，即使勾选也没有任何意义。  
+* Q: HWNAT / 硬件流量分载要开吗？  
+  A: OpenWrt 的硬件流量分载仅支持 MTK762x，即使勾选也没有任何意义。  
 
-  **Q: DNS 加速要开吗？**  
-  A: 不需要。  将与你使用的SSR-plus等应用的dns处理重复或者冲突。
+* Q: DNS 加速要开吗？  
+  A: 不需要。 将与你使用的 SSR-Plus 等应用的 dns 处理重复或者冲突。
 
-  **Q: Fullcone NAT 哪里开？可以开吗？**  
-  A: 在“网络 - 防火墙 - Fullcone”打开，建议打开。部份固件安装有"Turbo-ACC"应用，可打开检查。某些主题可能存在显示项兼容性问题，可在防火墙的 WAN 口设置里打开。  
+* Q: Fullcone NAT 哪里开？可以开吗？  
+  A: 在 “网络 - 防火墙 - Fullcone” 打开，建议打开。部份固件安装有 Turbo-ACC 应用，可打开检查。某些主题可能存在显示项兼容性问题，可在防火墙的 WAN 口设置里打开。  
 
-  **Q: 类原生固件可以使用 sysupgrade 吗？**  
-  A: 可以上传 img.gz 文件在线升级，不建议保留配置。RootFS 相同的固件，使用TLC类型TF卡，可能存在选择“不保存配置”升级也是保存配置，参考 2.2.3 条目。  
+* Q: 类原生固件可以使用 sysupgrade 吗？  
+  A: 可以上传 img.gz 文件在线升级，不建议保留配置。RootFS 相同的固件，使用 TLC 类型 TF 卡，可能存在选择“不保存配置”升级也是保存配置，参考 2.2.3 条目。  
 
-  **Q: 建议使用备份吗？**  
+* Q: 建议使用备份吗？  
   A: 跨版本升级请尽量干净部署。  
 
-  **Q: 为什么更改不了 LAN IP / 管理地址？**  
-  A: 这是 OpenWrt 19.07 带来的新 Feature，用于误操作失效后自动回滚。可点击保存并应用旁边向下的箭头，选择“强制应用”，或参考 5.1.1 条目。  
+* Q: 为什么更改不了 LAN IP / 管理地址？  
+  A: 这是 OpenWrt 19.07 带来的新 Feature，用于误操作失效后自动回滚。可点击保存并应用旁边向下的箭头，选择“强制应用”，或参考 5.2.2 条目。  
 
   其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
 
 ---
 
-### 5、OpenWrt 使用基本介绍  
+### 5、OpenWrt 使用基本介绍
 
 #### 5.1 OpenWrt基本知识整理
 
-   假若有意了解OpenWrt，可参阅佐须之男的[OpenWrt知识整理](http://www.openwrt.pro/post-170.html)
+  假若有意了解 OpenWrt，可参阅佐须之男的 [OpenWrt 知识整理](http://www.openwrt.pro/post-170.html)
 
-5.2 基本SSH操作
+#### 5.2 SSH 操作
 
-   使用者应具备一点最基础的系统操作能力，例如学会一点SSH操作
+  使用者应具备一点最基础的系统操作能力，例如学会一点 SSH 操作
 
-  * SSH客户端：
+##### 5.2.1 SSH 客户端的下载及连接
 
-    Windows 用户：下载 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+> Windows 用户：下载 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+>
+> Linux / macOS 用户：终端输入：  
 
-    Linux / MacOSX 用户：终端输入：  
+  ```  
+  ssh -p <你的 DropBear 端口号，默认22> root@<你的 R2S 的 IP 地址>
+  ```
 
-    ```  
-    ssh -p <你的 DropBear 端口号，默认22> root@<你的 R2S 的 IP 地址>
-    ```
+  *<注意，去掉 <> 括号，建议修改端口号为非 22，LAN Only 。输入密码不会有任何回显。 OpenWrt 缺省只有 root 一个用户>*  
 
-    （*注意，去掉尖括号）
+##### 5.2.2 SSH 的基本操作
 
-    （*建议修改端口号为非 22，LAN Only)
+* 更改 LAN IP  
 
-       (*输入密码不会有任何回显。 OpenWrt 缺省只有 root 一个用户） 
+  ```
+  uci set network.lan.ipaddr=<新的 LAN 地址>
+  uci commit network
+  /etc/init.d/network restart
+  ```
+  
+  *<注意，不包括 <> 括号。>*
+  
+* 使用 vi / vim 命令  
 
-  * 更改 LAN IP（注意，不要加尖括号）
+  [vi / vim 命令教程](https://www.runoob.com/linux/linux-vim.html))  
 
-    ```
-    uci set network.lan.ipaddr=<新的 LAN 地址>
-    uci commit network
-    /etc/init.d/network restart
-    ```
+  例如:
+  
+  ```  
+  vim /etc/config/network
+  /etc/init.d/network restart
+  ```
 
-  * 使用 vi / vim 命令 ([vi / vim 命令教程](https://www.runoob.com/linux/linux-vim.html))  
-      *换网口 ETH，改 WAN 口、LAN 口配置，更改 MAC 地址等均可通过 network 文件更改，希望大家举一反三，一通百通*  
+*<换网口 ETH，改 WAN 口、LAN 口配置，更改 MAC 地址等均可通过 network 文件更改，希望大家举一反三，一通百通>*  
 
-    ```  
-    vim /etc/config/network
-    /etc/init.d/network restart
-    ```
+* 使用 SSH 查看设备温度  
 
-  * 使用 SSH 查看设备温度  
+  ```    
+  cat /sys/class/thermal/thermal_zone0/temp
+  ```
 
-    ```    
-    cat /sys/class/thermal/thermal_zone0/temp
-    ```
+* 使用 SSH 查看设备 Soc 频率  
 
-  * 使用 SSH 查看设备 Soc 频率  
+  ```  
+  cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+  ```
 
-    ```  
-    cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
-    ```
-
-  * 使用 cputemp.sh 脚本查看温度频率  
+* 使用 cputemp.sh 脚本查看温度频率  
          
-     下载脚本到 /bin 路径下  
+  下载脚本到 /bin 路径下：  
 
-     ```  
-     wget https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O /bin/cputemp.sh
-     ```
+  ```  
+  wget https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O /bin/cputemp.sh
+  ```
 
-     使用脚本  
+  使用脚本：  
 
-     ```  
-     sh /bin/cputemp.sh
-     ```
+  ```  
+  sh /bin/cputemp.sh
+  ```
 
-     退出使用 `Ctrl + C`  
+  退出使用 `Ctrl + C`  
 
 ---
 

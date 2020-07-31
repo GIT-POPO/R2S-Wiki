@@ -440,7 +440,7 @@
   
 * 使用 vi / vim 命令  
 
-  [vi / vim 命令教程](https://www.runoob.com/linux/linux-vim.html))  
+  [vi / vim 命令教程](https://www.runoob.com/linux/linux-vim.html)  
 
   例如:
   
@@ -449,7 +449,7 @@
   /etc/init.d/network restart
   ```
 
-*<换网口 ETH，改 WAN 口、LAN 口配置，更改 MAC 地址等均可通过 network 文件更改，希望大家举一反三，一通百通>*  
+  *<换网口 ETH，改 WAN 口、LAN 口配置，更改 MAC 地址等均可通过 network 文件更改，希望大家举一反三，一通百通>*  
 
 * 使用 SSH 查看设备温度  
 
@@ -481,4 +481,4 @@
 
 ---
 
-## 未完待续，欢迎补充！  
+## 未完待续，欢迎补充！

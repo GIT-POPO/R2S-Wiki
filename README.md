@@ -471,8 +471,13 @@
   wget https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O /bin/cputemp.sh
   ```
 
-  使用脚本：  
-
+  使用脚本： 
+  
+  ```
+  chmod +x /bin/cputemp.sh
+  /bin/cputemp.sh
+  ```
+  或者
   ```  
   sh /bin/cputemp.sh
   ```

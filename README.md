@@ -90,7 +90,7 @@
 
 * 覆盖写入可被写入精心设计的 2GB 空文件所代替，节约大量时间。无残留，获得更好体验。  
 
-  > 下载地址： [zero2GB.img.gz](https://github.com/nicksun98/Others/raw/master/zero2GB.img.gz)  
+  > 下载地址： [zero2GB.img.gz](https://github.com/nicksun98/Others/raw/master/zero2GB.img.gz) （ 文件大小仅为约 2.1 MB / 1.9 MiB 左右 ）  
   >
   > 使用方法：先使用写卡软件写入 zero2GB.img.gz ，拔出读卡器并重新插入，再写入真正的软件包即可。  
   >

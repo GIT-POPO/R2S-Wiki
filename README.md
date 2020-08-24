@@ -88,6 +88,14 @@
 
 * 如选用 SquashFS 格式固件，建议刷写成功后 SSH 登入运行命令 `firstboot -y && reboot now` 完全清理。  
 
+* > 覆盖写入可被写入精心设计的 2GB 空文件所代替，节约大量时间。无残留，获得更好体验。  
+  >
+  > 下载地址： [zero2GB.img.gz](https://github.com/nicksun98/Others/raw/master/zero2GB.img.gz)  
+  >
+  > 使用方法：先使用写卡软件写入 zero2GB.img.gz ，拔出读卡器并重新插入，再写入真正的软件包即可。  
+  >
+  > 感谢群友 Kane Green 的辛苦付出。  
+
 ##### 2.2.3 TF 卡的其他常见问题
 
 * Q: 为什么启动不了系统？  

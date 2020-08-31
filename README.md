@@ -127,7 +127,7 @@
   所有铝合金外壳皆出自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。感谢群友们为 NanoPi R2S 所做的贡献。  
   友善厂家现推出外壳发售，神似 R2S Club 群组的第一代外壳。  
   
-  __购买外壳可加入 Telegram 群咨询 [NanoPi R2S Club](https://t.me/nanopir2sshell)，看群置顶。或 [淘宝链接](https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1613492699&activityId=156945e116dc477780f99dedf3ed91b3)，领券下单更优惠。__
+  __来自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 的众筹定制外壳已经全部售罄，感谢大家半年多的努力。经历了三代半的变化，外壳变成现在成熟的样子，每一代的进步都离不开大家的帮助，非常非常感谢为此努力的所有人。__
 
 ###### 2.3.1.1 铝合金外壳区别  
 

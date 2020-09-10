@@ -1,6 +1,6 @@
 ## NanoPi-R2S 操作手册
 
-  欢迎查看 NanoPi-R2S 操作手册。本页旨在为 [NanoPi R2S Club](https://t.me/nanopir2sshell) ，收集与解答 NanoPi-R2S 相关问题。  
+  欢迎查看 NanoPi-R2S 操作手册。本页旨在为 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) ，收集与解答 NanoPi-R2S 相关问题。  
   如有更好的意见与建议，随时欢迎 PR。  
   或者群内相关发言时直接 @popo  
 
@@ -113,7 +113,7 @@
   jffs2reset -y && reboot now
   ```
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
+  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
 
 ---
 
@@ -124,10 +124,10 @@
 
 ##### 2.3.1 铝合金外壳  
 
-  所有铝合金外壳皆出自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)。感谢群友们为 NanoPi R2S 所做的贡献。  
+  所有铝合金外壳皆出自 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw)。感谢群友们为 NanoPi R2S 所做的贡献。  
   友善厂家现推出外壳发售，神似 R2S Club 群组的第一代外壳。  
   
-  __来自 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 的众筹定制外壳已经全部售罄，感谢大家半年多的努力。经历了三代半的变化，外壳变成现在成熟的样子，每一代的进步都离不开大家的帮助，非常非常感谢为此努力的所有人。__
+  __来自 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 的众筹定制外壳已经全部售罄，感谢大家半年多的努力。经历了三代半的变化，外壳变成现在成熟的样子，每一代的进步都离不开大家的帮助，非常非常感谢为此努力的所有人。__
 
 ###### 2.3.1.1 铝合金外壳区别  
 
@@ -145,14 +145,14 @@
 
 ###### 2.3.1.2 安装方法  
 
-  暂略。正确安装才能保证良好散热效果，安装正确的铝合金外壳绝对能应付包括不透风弱电箱等非极端环境下正常使用。如有安装困难或温度过高，不明安装方法可加入 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)  
+  暂略。正确安装才能保证良好散热效果，安装正确的铝合金外壳绝对能应付包括不透风弱电箱等非极端环境下正常使用。如有安装困难或温度过高，不明安装方法可加入 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw)  
 
 ###### 2.3.1.3 半导体和风扇  
 
   半导体制冷片采用珀耳帖效应，安装在铝壳上可显著降低 Soc 温度。  
   注意做好热面散热和温控，否则会损坏制冷片和凝水导致 R2S 主板进液。  
   外壳外加装风扇会进一步降低 Soc 的温度。  
-  交流讨论可加入 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell)  
+  交流讨论可加入 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw)  
 
 ###### 2.3.1.4 常见问题  
 
@@ -174,7 +174,7 @@
 * Q: 群内外壳和友善外壳有什么区别？  
     A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有 OLED 的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
+  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
 
 ##### 2.3.2 风扇外壳
 
@@ -310,7 +310,7 @@
 
 * 地址：[Armbian/nanopi-r2s](https://www.armbian.com/nanopi-r2s/)  
 
-* 教程来自 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 的博客：  
+* 教程来自 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群主 Darya 的博客：  
 
   > 地址: [e.g.daryasyr.com](https://e.g.daryasyr.com)  
 
@@ -318,7 +318,7 @@
 
 #### 4.4 其它Linux 发行版固件
 
-* 等待 [NanoPi R2S Club](https://t.me/nanopir2sshell) 群主 Darya 补充，敬请期待！  
+* 等待 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群主 Darya 补充，敬请期待！  
 
 ---
 
@@ -408,7 +408,7 @@
 * Q: 为什么更改不了 LAN IP / 管理地址？  
   A: 这是 OpenWrt 19.07 带来的新 Feature，用于误操作失效后自动回滚。可点击保存并应用旁边向下的箭头，选择“强制应用”，或参考 5.2.2 条目。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/nanopir2sshell) 中提出、讨论。  
+  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
 
 ---
 

@@ -292,7 +292,7 @@
   地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
   *<注意 Branch>*  
   
-* *如果您在 Telegram [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群内询问哪个固件最好用/最稳定等愚蠢问题，您将被移出群聊，因为您没有阅读 Wiki，以及您并没有看到这行文字*
+* *欢迎补充，欢迎您为开源社区作出贡献。如果您在 Telegram [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群内询问哪个固件最好用/最稳定等愚蠢问题，您将被移出群聊，因为您没有阅读 Wiki，以及您并没有看到这行文字*  
   
 ##### 4.1.3 基于 Jayanta525 源码的类原生固件
 

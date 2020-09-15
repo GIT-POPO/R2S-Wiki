@@ -112,6 +112,8 @@
   ```  
   jffs2reset -y && reboot now
   ```
+* Q: 为什么重启后配置丢失？
+  A: 如果您使用的是 SquashFS 文件系统的固件，请再刷机后参照上一条执行清理 Upper Layer 或者 重新挂载 Overlay 分区。如果您使用的是 Ext4 文件系统的固件，请确定 TF 卡是可写入的状态，确定写入的文件及更改已切实写入TF卡，而不是存在于运行 RAM 中。如果遇到连续出现问题或者卡写保护等情况，建议更换 TF 卡，具体请参照 2.2.3 条目。  
 
   其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
 
@@ -192,7 +194,7 @@
  
   旧的 FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5 GHz。强制频宽 40 MHz，信道 40。重启后，可以跑到 100 Mbps 左右。  
  
-  原生 OpenWrt 可选用 MT7601 等网卡，具体参照固件支持。  
+  原生 OpenWrt 可选用 MT7601 等网卡，群友使用 EDUP 1200M USB 网卡可用，未测试。具体参照固件支持。  
 
   OpenWrt 支持 USB 的 4G 上网卡，具体请参考有编译支持的固件说明（目前主要支持 Hilink 模式）。  
 
@@ -267,7 +269,7 @@
 
   __固件介绍详见各固件仓库主页的 README 和 Releases。__ 部分超频固件保持 1.45V 电压超频至 1608 MHz，发热不变，更高性能。部分固件自带 Soc 调频，不懂不要动。电压表 1 GHz 下都相同，不建议频率低于 800 MHz，一切问题后果自负。若出现反复重启不能稳定，说明 Soc 体质偏差，建议放弃超频。  
 
-  设置错误或误操作后，SquashFS 可执行重置，部分固件带了 `fuck` 组件清除残留设置，使用更佳。使用备份和升级保留备份前请确保清楚了解所做的操作。  
+  设置错误或误操作后，SquashFS 可执行重置，部分固件带了 `fuck` 组件清除残留设置，使用更佳。强烈建议在刷写 SquashFS 固件后执行 `fuck` 或者 `firstboot -y && reboot now` ，使用备份和升级保留备份前请务必确保清楚了解所做的操作。  
 
 * QiuSimons（404 大佬）  
   地址：[project-openwrt/R2S-OpenWrt](https://github.com/project-openwrt/R2S-OpenWrt)  

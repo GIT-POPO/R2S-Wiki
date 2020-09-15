@@ -113,7 +113,7 @@
   jffs2reset -y && reboot now
   ```
 * Q: 为什么重启后配置丢失？  
-  A: 如果您使用的是 SquashFS 文件系统的固件，请再刷机后参照上一条执行清理 Upper Layer 或者 重新挂载 Overlay 分区。如果您使用的是 Ext4 文件系统的固件，请确定 TF 卡是可写入的状态，确定写入的文件及更改已切实写入TF卡，而不是存在于运行 RAM 中。如果遇到连续出现问题或者卡写保护等情况，建议更换 TF 卡，具体请参照 2.2.3 条目。  
+  A: 如果您使用的是 SquashFS 文件系统的固件，请再刷机后参照上一条执行清理 Upper Layer 或者 重新挂载 Overlay 分区。如果您使用的是 Ext4 文件系统的固件，请确定 TF 卡是可写入的状态，确定写入的文件及更改已切实写入TF卡，而不是存在于运行 RAM 中。如果遇到连续出现问题或者卡写保护等情况，建议更换 TF 卡，具体请参照 2.2.1 条目。  
 
   其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
 

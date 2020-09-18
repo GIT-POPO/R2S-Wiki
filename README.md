@@ -15,12 +15,12 @@
 <details>
   <summary>点击展开查看详细内容</summary>
   <pre>
-  > Soc: Rockchip RK3328, Quad-core Cortex-A53  
-  > DDR4 内存: 1 GB  
+  > Soc： Rockchip RK3328, Quad-core Cortex-A53  
+  > 内存： DDR4, 1 GB  
   > 网口：  
-  > RTL8211E（10 / 100 / 1000 Mbps 以太网口 x 1）  
-  > RTL8153B（USB 3.0 转 10 / 100 / 1000 Mbps 以太网口 x 1）  
-  > USB 2.0 接口：USB Type-A x1  
+    RTL8211E（10 / 100 / 1000 Mbps 以太网口 x 1）  
+    RTL8153B（USB 3.0 转 10 / 100 / 1000 Mbps 以太网口 x 1）  
+  > USB 接口：USB 2.0 Type-A x1  
   > TF 卡槽 x 1  
   > MicroUSB：供电和 Slave 功能  
   > Debug Serial Port：3.3V TTL 电平，3 Pin 2.54 mm 间距排针  
@@ -218,7 +218,7 @@
 
 #### 3.1 路由器
 
-  超小体积的双千兆网口的 ARM 四核 A53 开发板，非常适合做软路由路。  
+  超小体积的双千兆网口的 ARM 四核 A53 开发板，非常适合做软路由器。  
 
 ##### 3.1.1 主路由  
 

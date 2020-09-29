@@ -26,7 +26,7 @@
     * 部分固件内置有 SongChenwen 大佬的 [luci-app-r2sflasher](https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher)，可实现图形化刷机。  
 
     * 或者使用 Gary 大佬的在线刷机脚本：  
-    ```  
+    ```shell  
     wget -q https://github.com/quintus-lab/Openwrt-R2S/raw/master/script/update.sh && sh ./update.sh
     ```  
        *<脚本 3 4 选项的 ardanzhu 固件链接已失效>*  

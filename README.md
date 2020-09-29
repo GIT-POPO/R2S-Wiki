@@ -70,6 +70,7 @@
 ##### 2.2.1 TF 卡推荐
 
 * 本群推荐使用 “朗科与京东联名的 Class10 / SDHC / A1 的 TF 卡”  
+
   *<主要是便宜、能用、且拥有京东提供后续保修及换新服务>*  
 
 * 某宝等渠道的 “SanDisk Industrial 闪迪工业卡” 。从网友的反馈来看属 MLC 类型 TF 卡，且没 TLC 的擦写缺陷，适合频繁刷机。相比 TLC 拥有更长使用寿命，以及高至 85 度的工作温度。但渠道来源存在风险，请自行判断。  
@@ -109,13 +110,13 @@
   A: 因为 TLC 类型 TF 卡的特性，SquashFS 格式的系统存在的 Upper Layer 可能没有被擦除。特别是同系列的固件 RootFS 大小相同时会出现此类状况。[详情链接](https://openwrt.org/docs/guide-user/troubleshooting/failsafe_and_factory_reset)  
 
   解决方案：使用 SSH 等工具进 入R2S 输入：  
-  ```  
+  ```shell  
   jffs2reset -y && reboot now
   ```
 * Q: 为什么重启后配置丢失？  
   A: 如果您使用的是 SquashFS 文件系统的固件，请再刷机后参照上一条执行清理 Upper Layer 或者 重新挂载 Overlay 分区。如果您使用的是 Ext4 文件系统的固件，请确定 TF 卡是可写入的状态，确定写入的文件及更改已切实写入TF卡，而不是存在于运行 RAM 中。如果遇到连续出现问题或者卡写保护等情况，建议更换 TF 卡，具体请参照 2.2.1 条目。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
+  **其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。**  
 
 ---
 
@@ -176,7 +177,7 @@
 * Q: 群内外壳和友善外壳有什么区别？  
     A: 群内外壳已经众筹到最后一批，卖一个少一个，即将售罄绝版。拥有 OLED 的非凡乐趣和更佳的散热能力。友善外壳靠硅脂垫连接，散热会差一些，但是正常使用和非长时间暴力烤鸡不会碰触温度墙，可正常使用。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
+  **其他问题请先学会善用 [搜索引擎](https://www.google.com)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。**  
 
 ##### 2.3.2 风扇外壳
 
@@ -294,7 +295,7 @@
   地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
   *<注意 Branch>*  
   
-* *欢迎补充，欢迎您为开源社区作出贡献。如果您在 Telegram [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群内询问哪个固件最好用/最稳定等愚蠢问题，您将被移出群聊，因为您没有阅读 Wiki，以及您并没有看到这行文字*  
+  **欢迎补充，欢迎您为开源社区作出贡献。如果您在 Telegram [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群内询问哪个固件最好用/最稳定等愚蠢问题，您将被移出群聊，因为您没有阅读 Wiki，以及您并没有看到这行文字。**  
   
 ##### 4.1.3 基于 Jayanta525 源码的类原生固件
 
@@ -306,7 +307,7 @@
 
 #### 4.2 FriendlyWrt 固件
 
-  已不推荐使用，内容已转移，[点击查看](https://github.com/nicksun98/R2S-Wiki/blob/master/friendlywrt.md)  
+  已不推荐使用，内容已转移，[点击查看](/others/friendlywrt.md)  
 
 ---
 
@@ -326,7 +327,7 @@
 
 ---
 
-#### 4.5 NanoPi R2S 支持在线升级 / 降级 / 更改固件。
+#### 4.5 NanoPi R2S 在线升级 / 降级 / 更改固件  
 
 ##### 4.5.1 使用 LuCI 网页管理界面的"备份/升级"功能更新固件
 
@@ -338,7 +339,7 @@
  
   如果是使用普通市售 TLC 类型 TF 卡，建议升级完成重启后，使用SSH进一步清除旧配置：  
 
-  ```  
+  ```shell  
   firstboot -y && reboot now
   ```
 
@@ -354,21 +355,21 @@
 
   直接使用 dd 命令把固件 img 全新写入TF卡更新系统，"/dev/mmcblk0" 是 R2S 的 TF 卡设备位置，将 <openwrt.img.gz> 替换成实际文件名（不包括 <> 括号）。  
 
-  ```  
+  ```shell  
   dd if=/tmp/<openwrt.img> of=/dev/mmcblk0 conv=fsync
   reboot
   ```
 
   使用内置的 sysupgrade 命令：  
 
-  ```  
+  ```shell  
   sysupgrade -v /tmp/<openwrt.img.gz>
   reboot
   ```
 
   等待重启后，重连 SSH，输入：  
 
-  ```  
+  ```shell  
   firstboot -y && reboot now
   ```
   
@@ -376,7 +377,7 @@
 
   建议使用 dd 命令进行写盘，参考上一条 4.5.2  
 
-  ```  
+  ```shell  
   dd if=/tmp/upload/<openwrt.img> of=/dev/mmcblk0 conv=fsync
   reboot
   ```
@@ -412,7 +413,7 @@
 * Q: 为什么更改不了 LAN IP / 管理地址？  
   A: 这是 OpenWrt 19.07 带来的新 Feature，用于误操作失效后自动回滚。可点击保存并应用旁边向下的箭头，选择“强制应用”，或参考 5.2.2 条目。  
 
-  其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。  
+  **其他问题请先学会善用 [搜索引擎](https://www.google.com/)，尝试自行解决，对于无法自行解决的问题欢迎阅读 [提问的艺术](https://github.com/betaseeker/How-To-Ask-Questions) 后在 Telegram 群 [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 中提出、讨论。**  
 
 ---
 
@@ -432,7 +433,7 @@
 >
 > Linux / macOS 用户：终端输入：  
 
-  ```  
+  ```shell  
   ssh -p <你的 DropBear 端口号，默认为 22> root@<你的 R2S 的 IP 地址>
   ```
 
@@ -442,7 +443,7 @@
 
 * 更改 LAN IP  
 
-  ```
+  ```shell
   uci set network.lan.ipaddr=<新的 LAN 地址>
   uci commit network
   /etc/init.d/network restart
@@ -456,7 +457,7 @@
 
   例如:
   
-  ```  
+  ```shell  
   vim /etc/config/network
   /etc/init.d/network restart
   ```
@@ -465,13 +466,13 @@
 
 * 使用 SSH 查看设备温度  
 
-  ```    
+  ```shell    
   cat /sys/class/thermal/thermal_zone0/temp
   ```
 
 * 使用 SSH 查看设备 Soc 频率  
 
-  ```  
+  ```shell  
   cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
   ```
 
@@ -479,18 +480,18 @@
          
   下载脚本到 /bin 路径下：  
 
-  ```  
+  ```shell  
   wget https://raw.githubusercontent.com/nicksun98/Others/master/cputemp.sh -O /bin/cputemp.sh
   ```
 
   使用脚本： 
   
-  ```
+  ```shell
   chmod +x /bin/cputemp.sh
   /bin/cputemp.sh
   ```
   或者
-  ```  
+  ```shell  
   sh /bin/cputemp.sh
   ```
 

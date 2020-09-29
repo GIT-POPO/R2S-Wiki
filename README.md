@@ -278,9 +278,8 @@
 * Quintus Chu（502 大佬）  
   地址：[quintus-lab/Openwrt-R2S](https://github.com/quintus-lab/Openwrt-R2S)  
 
-* CN_SZTL（高大全版）  
+* CN_SZTL（高大全版）  *<包含 18.06 版本>*  
   地址：[Telegram @nanopi\_r2s](https://t.me/nanopi\_r2s)  
-  *<包含 18.06 版本>*  
 
 * Kane Green  
   地址：[KaneGreen/R2S-OpenWrt](https://github.com/KaneGreen/R2S-OpenWrt)  
@@ -291,9 +290,9 @@
 * 墨子冥  
   地址：[msylgj/R2S-OpenWrt](https://github.com/msylgj/R2S-OpenWrt)  
 
-* Chuck  
+* Chuck  *<注意 Branch>*  
   地址：[fanck0605/openwrt-nanopi-r2s](https://github.com/fanck0605/openwrt-nanopi-r2s)  
-  *<注意 Branch>*  
+
   
   **欢迎补充，欢迎您为开源社区作出贡献。如果您在 Telegram [NanoPi R2S Club](https://t.me/joinchat/JcBRDFWlAEMysWbVdPsxFw) 群内询问哪个固件最好用/最稳定等愚蠢问题，您将被移出群聊，因为您没有阅读 Wiki，以及您并没有看到这行文字。**  
   

@@ -195,7 +195,7 @@
  
   旧的 FriendlyWrt 可编译进 811ac 等 USB 网卡，设置为 N 模式，5 GHz。强制频宽 40 MHz，信道 40。重启后，可以跑到 100 Mbps 左右。  
  
-  原生 OpenWrt 可选用 MT7601 等网卡，群友使用 EDUP 1200M USB 网卡可用，未测试。具体参照固件支持。  
+  原生 OpenWrt 可选用 RTL8811/12AU 例如 Netgear A6100 无线网卡，部分固件支持。也可选用 MT7601 等网卡，不能开启 AP Mode 。群友使用 EDUP 1200M USB 网卡可用，也能开启 AP Mode，未测试且比 A6100 明显偏大。具体参照固件支持。  
 
   OpenWrt 支持 USB 的 4G 上网卡，具体请参考有编译支持的固件说明（目前主要支持 Hilink 模式）。  
 
